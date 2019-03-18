@@ -1,0 +1,785 @@
+{
+  "@context" : {
+    "TimeWarpEditDistance" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#TimeWarpEditDistance"
+    },
+    "Bayesian" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#Bayesian"
+    },
+    "SVR" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#SVR"
+    },
+    "AlgorithmSuitableForSpectroTSDataset" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#AlgorithmSuitableForSpectroTSDataset"
+    },
+    "AlgorithmSuitableForFewClassTSDataset" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#AlgorithmSuitableForFewClassTSDataset"
+    },
+    "AlgorithmWithDerivative" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#AlgorithmWithDerivative"
+    },
+    "MediumTestTSDataset" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#MediumTestTSDataset"
+    },
+    "EditDistancebasedonRealPenalty" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#EditDistancebasedonRealPenalty"
+    },
+    "ExpectationMaximisation" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#ExpectationMaximisation"
+    },
+    "SmallTrainTSDataset" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#SmallTrainTSDataset"
+    },
+    "AlgorithmSuitableForSensorTSDataset" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#AlgorithmSuitableForSensorTSDataset"
+    },
+    "CleanMissingData" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#CleanMissingData"
+    },
+    "TSDatasetByTestSize" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#TSDatasetByTestSize"
+    },
+    "AlgorithmWithWarpingWindow" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#AlgorithmWithWarpingWindow"
+    },
+    "SolutionForTSC" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#SolutionForTSC"
+    },
+    "LPS" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#LPS"
+    },
+    "AveragedOne-DependenceEstimators" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#AveragedOne-DependenceEstimators"
+    },
+    "StructuredSVM" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#StructuredSVM"
+    },
+    "LearningWithCounts" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#LearningWithCounts"
+    },
+    "Logistic" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#Logistic"
+    },
+    "Filter" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#Filter"
+    },
+    "hasTest" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#hasTest"
+    },
+    "Artificial_Neural_Network" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#Artificial_Neural_Network"
+    },
+    "ERP_1NN" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#ERP_1NN"
+    },
+    "WarpingWindow" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#WarpingWindow"
+    },
+    "DeepLearning" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#DeepLearning"
+    },
+    "hasTrainSize" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#hasTrainSize"
+    },
+    "PrincipalComponentAnalysis" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#PrincipalComponentAnalysis"
+    },
+    "LargeTrainTSDataset" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#LargeTrainTSDataset"
+    },
+    "Dataset" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#Dataset"
+    },
+    "hasModel" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#hasModel",
+      "@type" : "@id"
+    },
+    "Instance-based" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#Instance-based"
+    },
+    "BayesianBeliefNetwork" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#BayesianBeliefNetwork"
+    },
+    "StackedGeneralization" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#StackedGeneralization"
+    },
+    "MediumTrainTSDataset" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#MediumTrainTSDataset"
+    },
+    "AlgorithmSuitableForMediumTSDataset" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#AlgorithmSuitableForMediumTSDataset"
+    },
+    "LCSS_1NN" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#LCSS_1NN"
+    },
+    "MediumTSDataset" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#MediumTSDataset"
+    },
+    "MixtureDiscriminantAnalysis" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#MixtureDiscriminantAnalysis"
+    },
+    "LocallyEstimatedScatterplotSmoothing" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#LocallyEstimatedScatterplotSmoothing"
+    },
+    "LongestCommonSubsequenceDistanceforRealSequences" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#LongestCommonSubsequenceDistanceforRealSequences"
+    },
+    "SyntheticMinorityOversamplingTechnique" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#SyntheticMinorityOversamplingTechnique"
+    },
+    "PrincipalComponentRegression" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#PrincipalComponentRegression"
+    },
+    "Chi-squaredAutomaticInteractionDetection" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#Chi-squaredAutomaticInteractionDetection"
+    },
+    "BootstrappedAggregation" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#BootstrappedAggregation"
+    },
+    "DTW_F" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#DTW_F"
+    },
+    "AlgorithmByLength" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#AlgorithmByLength"
+    },
+    "SpectroTSDataset" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#SpectroTSDataset"
+    },
+    "ConvolutionalNeuralNetwork" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#ConvolutionalNeuralNetwork"
+    },
+    "ACF" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#ACF"
+    },
+    "BayesianNetwork" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#BayesianNetwork"
+    },
+    "EditDistanceforRealSequences" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#EditDistanceforRealSequences"
+    },
+    "RidgeRegression" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#RidgeRegression"
+    },
+    "LogisticRegression" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#LogisticRegression"
+    },
+    "Mathematics" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#Mathematics"
+    },
+    "MultinomialNaiveBayes" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#MultinomialNaiveBayes"
+    },
+    "AlgorithmByPerformence" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#AlgorithmByPerformence"
+    },
+    "LearningVectorQuantization" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#LearningVectorQuantization"
+    },
+    "Clustering" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#Clustering"
+    },
+    "BN" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#BN"
+    },
+    "NaiveBayes" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#NaiveBayes"
+    },
+    "AlgorithmSuitableForImageTSDataset" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#AlgorithmSuitableForImageTSDataset"
+    },
+    "FewClassTSDataset" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#FewClassTSDataset"
+    },
+    "BayesianSVM" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#BayesianSVM"
+    },
+    "SQLiteTransformation" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#SQLiteTransformation"
+    },
+    "StepwiseRegression" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#StepwiseRegression"
+    },
+    "NormalizeData" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#NormalizeData"
+    },
+    "AlgorithmSuitableForLargeTrainTSDataset" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#AlgorithmSuitableForLargeTrainTSDataset"
+    },
+    "WDTW_1NN" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#WDTW_1NN"
+    },
+    "ASSISTANT" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#ASSISTANT"
+    },
+    "AlgorithmSuitableForMediumClassTSDataset" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#AlgorithmSuitableForMediumClassTSDataset"
+    },
+    "Decisiontrees" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#Decisiontrees"
+    },
+    "CosineSimilarity" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#CosineSimilarity"
+    },
+    "DDTW_Rn_1NN" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#DDTW_Rn_1NN"
+    },
+    "AlgorithmSuitableForECGTSDataset" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#AlgorithmSuitableForECGTSDataset"
+    },
+    "Q-Learning" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#Q-Learning"
+    },
+    "AlgorithmWithACF" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#AlgorithmWithACF"
+    },
+    "SmallTestTSDataset" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#SmallTestTSDataset"
+    },
+    "DTW_R1_1NN" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#DTW_R1_1NN"
+    },
+    "ClipOutliers" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#ClipOutliers"
+    },
+    "TSDatasetByArea" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#TSDatasetByArea"
+    },
+    "SammonMapping" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#SammonMapping"
+    },
+    "hasLabeledValues" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#hasLabeledValues"
+    },
+    "hasTestSize" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#hasTestSize"
+    },
+    "RadialBasisFunction" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#RadialBasisFunction"
+    },
+    "LinearDiscriminateAnalysis" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#LinearDiscriminateAnalysis"
+    },
+    "Derivative" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#Derivative"
+    },
+    "AlgorithmSuitableForManyClassTSDataset" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#AlgorithmSuitableForManyClassTSDataset"
+    },
+    "GeneticAlgorithm" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#GeneticAlgorithm"
+    },
+    "AlgorithmBasedOnIntervals" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#AlgorithmBasedOnIntervals"
+    },
+    "FullWarpingWindow" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#FullWarpingWindow"
+    },
+    "LS" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#LS"
+    },
+    "RandomForest" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#RandomForest"
+    },
+    "k-Medians" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#k-Medians"
+    },
+    "WeightFunction" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#WeightFunction"
+    },
+    "Regularization" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#Regularization"
+    },
+    "M5" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#M5"
+    },
+    "BoP" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#BoP"
+    },
+    "RotationForest" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#RotationForest"
+    },
+    "AlgorithmWithRn" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#AlgorithmWithRn"
+    },
+    "Move-Split-Merge" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#Move-Split-Merge"
+    },
+    "SupportVectorMachinesWithLinearKernel" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#SupportVectorMachinesWithLinearKernel"
+    },
+    "BN_AugmentedNaiveBayes" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#BN_AugmentedNaiveBayes"
+    },
+    "TemporalDifferencelearning" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#TemporalDifferencelearning"
+    },
+    "NB" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#NB"
+    },
+    "MinkowskiDistance" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#MinkowskiDistance"
+    },
+    "LS-SVM" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#LS-SVM"
+    },
+    "AlgorithmSuitableForShortTSDataset" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#AlgorithmSuitableForShortTSDataset"
+    },
+    "Self-OrganizingMap" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#Self-OrganizingMap"
+    },
+    "RotF" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#RotF"
+    },
+    "employs" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#employs",
+      "@type" : "@id"
+    },
+    "DD_DTW" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#DD_DTW"
+    },
+    "DerivativeDynamicTimeWarping" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#DerivativeDynamicTimeWarping"
+    },
+    "GaussianNaiveBayes" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#GaussianNaiveBayes"
+    },
+    "TSDatasetByLength" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#TSDatasetByLength"
+    },
+    "AdaBoost" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#AdaBoost"
+    },
+    "AlgorithmSuitableForSmallTestTSDataset" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#AlgorithmSuitableForSmallTestTSDataset"
+    },
+    "AlgorithmSuitableForLongTSDataset" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#AlgorithmSuitableForLongTSDataset"
+    },
+    "FlexibleDiscriminantAnalysis" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#FlexibleDiscriminantAnalysis"
+    },
+    "DeviceTSDataset" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#DeviceTSDataset"
+    },
+    "RadialBasisFunctionNetwork" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#RadialBasisFunctionNetwork"
+    },
+    "SVMQ" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#SVMQ"
+    },
+    "AlgorithmWithR1" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#AlgorithmWithR1"
+    },
+    "hasClass" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#hasClass"
+    },
+    "AlgorithmSuitableForDeviceTSDataset" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#AlgorithmSuitableForDeviceTSDataset"
+    },
+    "AlgorithmBasedOnModel" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#AlgorithmBasedOnModel"
+    },
+    "hasSize" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#hasSize"
+    },
+    "hasClassSize" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#hasClassSize"
+    },
+    "hasLengthSize" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#hasLengthSize"
+    },
+    "SimulatedTSDataset" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#SimulatedTSDataset"
+    },
+    "Algorithm" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#Algorithm"
+    },
+    "ProjectionPursuit" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#ProjectionPursuit"
+    },
+    "PartialLeastSquaresRegression" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#PartialLeastSquaresRegression"
+    },
+    "AlgorithmSuitableForLargeTestTSDataset" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#AlgorithmSuitableForLargeTestTSDataset"
+    },
+    "MultivariateAdaptiveRegressionSplines" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#MultivariateAdaptiveRegressionSplines"
+    },
+    "TWE_1NN" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#TWE_1NN"
+    },
+    "AlgorithmSuitableForMotionTSDataset" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#AlgorithmSuitableForMotionTSDataset"
+    },
+    "MotionTSDataset" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#MotionTSDataset"
+    },
+    "ECGTSDataset" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#ECGTSDataset"
+    },
+    "hasTrain" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#hasTrain"
+    },
+    "MSM_1NN" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#MSM_1NN"
+    },
+    "AssociationRuleLearning" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#AssociationRuleLearning"
+    },
+    "AlgorithmSuitableForSimulatedTSDataset" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#AlgorithmSuitableForSimulatedTSDataset"
+    },
+    "AlgorithmSuitableForMediumTestTSDataset" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#AlgorithmSuitableForMediumTestTSDataset"
+    },
+    "BOSS" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#BOSS"
+    },
+    "Complexity-InvariantDistance" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#Complexity-InvariantDistance"
+    },
+    "HopfieldNetwork" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#HopfieldNetwork"
+    },
+    "TSBF" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#TSBF"
+    },
+    "MulticlassSVM" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#MulticlassSVM"
+    },
+    "AlgorithmSuitableForSmallTrainTSDataset" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#AlgorithmSuitableForSmallTrainTSDataset"
+    },
+    "GradientBoostedRegressionTrees" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#GradientBoostedRegressionTrees"
+    },
+    "SupportVectorMachine" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#SupportVectorMachine"
+    },
+    "Kernel-Based" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#Kernel-Based"
+    },
+    "TransductiveSupportVectorMachines" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#TransductiveSupportVectorMachines"
+    },
+    "Boosting" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#Boosting"
+    },
+    "EditMetadata" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#EditMetadata"
+    },
+    "CID_DTW" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#CID_DTW"
+    },
+    "MultidimensionalScaling" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#MultidimensionalScaling"
+    },
+    "DeepBeliefNetworks" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#DeepBeliefNetworks"
+    },
+    "QuadraticDiscriminantAnalysis" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#QuadraticDiscriminantAnalysis"
+    },
+    "ShortTSDataset" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#ShortTSDataset"
+    },
+    "PS" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#PS"
+    },
+    "LocallyWeightedLearning" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#LocallyWeightedLearning"
+    },
+    "availableTo" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#availableTo",
+      "@type" : "@id"
+    },
+    "AlgorithmByFunction" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#AlgorithmByFunction"
+    },
+    "HierarchicalClustering" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#HierarchicalClustering"
+    },
+    "AutocorrelationFunction" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#AutocorrelationFunction"
+    },
+    "TSF" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#TSF"
+    },
+    "Perceptron" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#Perceptron"
+    },
+    "TSDatasetByTrainSize" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#TSDatasetByTrainSize"
+    },
+    "k-NearestNeighbor" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#k-NearestNeighbor"
+    },
+    "DynamicTimeWarping" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#DynamicTimeWarping"
+    },
+    "SensorTSDataset" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#SensorTSDataset"
+    },
+    "DTW_Rn_1NN" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#DTW_Rn_1NN"
+    },
+    "GradientBoostingMachines" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#GradientBoostingMachines"
+    },
+    "DecisionStump" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#DecisionStump"
+    },
+    "ConcreteTSCAlgorithm" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#ConcreteTSCAlgorithm"
+    },
+    "AlgorithmBasedOnDictionary" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#AlgorithmBasedOnDictionary"
+    },
+    "StackedAuto-Encoders" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#StackedAuto-Encoders"
+    },
+    "hasFunction" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#hasFunction",
+      "@type" : "@id"
+    },
+    "suitableFor" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#suitableFor",
+      "@type" : "@id"
+    },
+    "ManyClassTSDataset" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#ManyClassTSDataset"
+    },
+    "DerivativeTransformDistance" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#DerivativeTransformDistance"
+    },
+    "AlgorithmByTechnique" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#AlgorithmByTechnique"
+    },
+    "AlgorithmBasedOnShapelets" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#AlgorithmBasedOnShapelets"
+    },
+    "LargeTestTSDataset" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#LargeTestTSDataset"
+    },
+    "AlgorithmSuitableForMediumTrainTSDataset" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#AlgorithmSuitableForMediumTrainTSDataset"
+    },
+    "hasTechnique" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#hasTechnique",
+      "@type" : "@id"
+    },
+    "LeastAbsoluteShrinkageAndSelectionOperator" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#LeastAbsoluteShrinkageAndSelectionOperator"
+    },
+    "PartitionAndSample" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#PartitionAndSample"
+    },
+    "WDDTW_1NN" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#WDDTW_1NN"
+    },
+    "DistanceFunction" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#DistanceFunction"
+    },
+    "OrdinaryLeastSquaresRegression" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#OrdinaryLeastSquaresRegression"
+    },
+    "ClassificationAndRegressionTree" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#ClassificationAndRegressionTree"
+    },
+    "hasMeasure" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#hasMeasure",
+      "@type" : "@id"
+    },
+    "AlgorithmBasedOnCombinations" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#AlgorithmBasedOnCombinations"
+    },
+    "AlgorithmByModel" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#AlgorithmByModel"
+    },
+    "IterativeDichotomiser3" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#IterativeDichotomiser3"
+    },
+    "ConditionalDecisionTrees" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#ConditionalDecisionTrees"
+    },
+    "FS" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#FS"
+    },
+    "C5.0" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#C5.0"
+    },
+    "k-Means" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#k-Means"
+    },
+    "Back-Propagation" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#Back-Propagation"
+    },
+    "AlgorithmByNoOfClass" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#AlgorithmByNoOfClass"
+    },
+    "DimensionalityReduction" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#DimensionalityReduction"
+    },
+    "AlgorithmByTrainSize" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#AlgorithmByTrainSize"
+    },
+    "TimeSeriesDataset" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#TimeSeriesDataset"
+    },
+    "DeepBoltzmannMachine" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#DeepBoltzmannMachine"
+    },
+    "LongTSDataset" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#LongTSDataset"
+    },
+    "EE" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#EE"
+    },
+    "Eclatalgorithm" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#Eclatalgorithm"
+    },
+    "ST" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#ST"
+    },
+    "QuantizeData" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#QuantizeData"
+    },
+    "SVML" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#SVML"
+    },
+    "SupervisedLearningInQuest" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#SupervisedLearningInQuest"
+    },
+    "LinearRegression" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#LinearRegression"
+    },
+    "COTE" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#COTE"
+    },
+    "DTD_C" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#DTD_C"
+    },
+    "EuclideanDistance" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#EuclideanDistance"
+    },
+    "FeatureSelection" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#FeatureSelection"
+    },
+    "EstimationMethod" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#EstimationMethod"
+    },
+    "hasAttribute" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#hasAttribute"
+    },
+    "PUBLIC" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#PUBLIC"
+    },
+    "ElasticNet" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#ElasticNet"
+    },
+    "WeightedDynamicTimeWarping" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#WeightedDynamicTimeWarping"
+    },
+    "Apriorialgorithm" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#Apriorialgorithm"
+    },
+    "LocallyWeightedRegression" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#LocallyWeightedRegression"
+    },
+    "Euclidean_1NN" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#Euclidean_1NN"
+    },
+    "FeatureSelectionalgorithms" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#FeatureSelectionalgorithms"
+    },
+    "ReinforcementLearning" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#ReinforcementLearning"
+    },
+    "RandF" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#RandF"
+    },
+    "MediumClassTSDataset" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#MediumClassTSDataset"
+    },
+    "ImageTSDataset" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#ImageTSDataset"
+    },
+    "ChebyshevDistance" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#ChebyshevDistance"
+    },
+    "SAXVSM" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#SAXVSM"
+    },
+    "AlgorithmByTestSize" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#AlgorithmByTestSize"
+    },
+    "NearestNeighbor" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#1NearestNeighbor"
+    },
+    "AlgorithmBasedOnWholeSeries" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#AlgorithmBasedOnWholeSeries"
+    },
+    "FastDTW" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#FastDTW"
+    },
+    "MLP" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#MLP"
+    },
+    "PolynomialRegression" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#PolynomialRegression"
+    },
+    "ManhattanDistance" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#ManhattanDistance"
+    },
+    "TreeAugmentedNaïveBayes" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#TreeAugmentedNaïveBayes"
+    },
+    "GeneralBayesianNetwork" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#GeneralBayesianNetwork"
+    },
+    "C4.5" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#C4.5"
+    },
+    "Least-AngleRegression" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#Least-AngleRegression"
+    },
+    "Ensemble" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#Ensemble"
+    },
+    "LinearDiscriminantAnalysis" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#LinearDiscriminantAnalysis"
+    },
+    "Regression" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#Regression"
+    },
+    "AlgorithmByArea" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#AlgorithmByArea"
+    },
+    "ScalablePaRallelizableInductionOfDecisionTrees" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#ScalablePaRallelizableInductionOfDecisionTrees"
+    },
+    "WarpingWindowSetThroughCrossValidation" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#WarpingWindowSetThroughCrossValidation"
+    },
+    "TSDatasetByNoOfClass" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#TSDatasetByNoOfClass"
+    },
+    "DDTW_R1_1NN" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#DDTW_R1_1NN"
+    },
+    "Rule-Learner" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#Rule-Learner"
+    },
+    "Preprocessing" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#Preprocessing"
+    },
+    "SupportVectorMachinesWithQuadraticKernel" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#SupportVectorMachinesWithQuadraticKernel"
+    },
+    "SVC" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/11/untitled-ontology-57#SVC"
+    }
+  }
+}
