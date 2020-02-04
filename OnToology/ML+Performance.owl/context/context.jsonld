@@ -1,0 +1,1289 @@
+{
+  "@context" : {
+    "OWLClass_0cc71471_b497_4368_b3d4_f265b43c9034" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_0cc71471_b497_4368_b3d4_f265b43c9034"
+    },
+    "OWLClass_6c0abc0d_bdc1_4ff5_bb4b_6c0679183375" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_6c0abc0d_bdc1_4ff5_bb4b_6c0679183375"
+    },
+    "OWLClass_bba76559_9ad0_4327_b2b7_b743da24aefb" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_bba76559_9ad0_4327_b2b7_b743da24aefb"
+    },
+    "OWLClass_71b9687b_c383_4169_a1e1_c94fb6f2b0ff" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_71b9687b_c383_4169_a1e1_c94fb6f2b0ff"
+    },
+    "OWLClass_8981ff51_89fc_44ec_a02c_3b34ee45ab27" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_8981ff51_89fc_44ec_a02c_3b34ee45ab27"
+    },
+    "OWLClass_99fa5695_a2ee_48b9_b4b2_da4beeae1d65" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_99fa5695_a2ee_48b9_b4b2_da4beeae1d65"
+    },
+    "OWLClass_2340fbaf_6b3e_41b7_ac03_5059677d7fee" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_2340fbaf_6b3e_41b7_ac03_5059677d7fee"
+    },
+    "Creat_SAX_List" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Creat_SAX_List"
+    },
+    "OWLClass_641d3741_2b01_467d_9c96_85db2e16fdd3" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_641d3741_2b01_467d_9c96_85db2e16fdd3"
+    },
+    "Initialize_Shapelets" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Initialize_Shapelets"
+    },
+    "employ" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#employ",
+      "@type" : "@id"
+    },
+    "OWLClass_cb1abbb7_2c6e_431a_8575_88ad7683fcce" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_cb1abbb7_2c6e_431a_8575_88ad7683fcce"
+    },
+    "Generate_Interval_Features" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Generate_Interval_Features"
+    },
+    "OWLClass_6f1f34f6_b67e_475f_a832_31e6ed0b1441" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_6f1f34f6_b67e_475f_a832_31e6ed0b1441"
+    },
+    "OWLClass_1f45265d_4975_492c_9f66_6e6d9a9a500f" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_1f45265d_4975_492c_9f66_6e6d9a9a500f"
+    },
+    "OWLClass_66e48592_8463_4a6e_846a_7cf6b10668b9" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_66e48592_8463_4a6e_846a_7cf6b10668b9"
+    },
+    "OWLClass_6c58bc51_b19e_4d21_ade2_3d5583c88695" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_6c58bc51_b19e_4d21_ade2_3d5583c88695"
+    },
+    "OWLClass_b2ce8d88_d409_4114_b0c1_7478859277e9" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_b2ce8d88_d409_4114_b0c1_7478859277e9"
+    },
+    "OWLClass_b7294eb8_14c2_405b_9710_9f45a0d4d906" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_b7294eb8_14c2_405b_9710_9f45a0d4d906"
+    },
+    "OWLClass_75d3b966_cb5b_4a3d_aeb1_b69c143a0313" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_75d3b966_cb5b_4a3d_aeb1_b69c143a0313"
+    },
+    "Redundant_Structure" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Redundant_Structure"
+    },
+    "Regression_Model" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Regression_Model"
+    },
+    "OWLClass_a15c6a41_e238_422f_882c_3cabe03ac261" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_a15c6a41_e238_422f_882c_3cabe03ac261"
+    },
+    "Cos_Transform" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Cos_Transform"
+    },
+    "OWLClass_44ca3ce8_0126_4c5c_9fdb_96a981da0892" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_44ca3ce8_0126_4c5c_9fdb_96a981da0892"
+    },
+    "Artificial_Neural_Network" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Artificial_Neural_Network"
+    },
+    "ST_Operations" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#ST_Operations"
+    },
+    "OWLClass_b0af9ff8_d5a3_4fee_8591_f6984b08843e" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_b0af9ff8_d5a3_4fee_8591_f6984b08843e"
+    },
+    "OWLClass_a6867b10_ca85_4024_9aa5_d0ce99ea22b0" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_a6867b10_ca85_4024_9aa5_d0ce99ea22b0"
+    },
+    "OWLClass_90bdde88_8f0b_4474_88ed_8c508ff5f090" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_90bdde88_8f0b_4474_88ed_8c508ff5f090"
+    },
+    "OWLClass_dec13176_efa5_4e74_ae4f_21455e7a730a" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_dec13176_efa5_4e74_ae4f_21455e7a730a"
+    },
+    "OWLClass_c1f86cfc_e308_4962_b6af_d92a7ccc53a2" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_c1f86cfc_e308_4962_b6af_d92a7ccc53a2"
+    },
+    "OWLClass_f87e87eb_e86f_4236_8423_d2c3f096f60e" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_f87e87eb_e86f_4236_8423_d2c3f096f60e"
+    },
+    "OWLClass_35f9ada3_34b7_436f_9705_555c26c34887" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_35f9ada3_34b7_436f_9705_555c26c34887"
+    },
+    "OWLClass_902eb306_bcf6_45fb_a269_86e9ed8e44c1" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_902eb306_bcf6_45fb_a269_86e9ed8e44c1"
+    },
+    "Representation" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Representation"
+    },
+    "Dimension_Reduction" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Dimension_Reduction"
+    },
+    "Classification_Model" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Classification_Model"
+    },
+    "OWLClass_57c492b8_9da0_4f8d_8a89_ac61bca4798d" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_57c492b8_9da0_4f8d_8a89_ac61bca4798d"
+    },
+    "Construct_Regression_Trees" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Construct_Regression_Trees"
+    },
+    "OWLClass_a0ab41f6_1dcd_4745_acee_1fc88a032bcb" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_a0ab41f6_1dcd_4745_acee_1fc88a032bcb"
+    },
+    "OWLClass_ea1378ec_dba5_4e61_87be_9541ca71dd26" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_ea1378ec_dba5_4e61_87be_9541ca71dd26"
+    },
+    "Process_for_Distance_based_Methods" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Process_for_Distance_based_Methods"
+    },
+    "OWLClass_fec7a1a1_eec4_4d7b_8691_1426cf8535fa" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_fec7a1a1_eec4_4d7b_8691_1426cf8535fa"
+    },
+    "OWLObjectProperty_e57a2e62_eeb0_4f54_bb01_503f8103b39d" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLObjectProperty_e57a2e62_eeb0_4f54_bb01_503f8103b39d",
+      "@type" : "@id"
+    },
+    "Recombine" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Recombine"
+    },
+    "OWLClass_a5650d19_2e5c_41f7_8fe0_e64397b6b576" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_a5650d19_2e5c_41f7_8fe0_e64397b6b576"
+    },
+    "OWLClass_d8c80319_c69c_4f01_8d94_24cc24838339" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_d8c80319_c69c_4f01_8d94_24cc24838339"
+    },
+    "OWLClass_8759f7c6_0c2a_4830_97e5_2bfe87654544" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_8759f7c6_0c2a_4830_97e5_2bfe87654544"
+    },
+    "OWLObjectProperty_5cdbf4b1_6f96_4015_836a_3fd8c6d83786" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLObjectProperty_5cdbf4b1_6f96_4015_836a_3fd8c6d83786",
+      "@type" : "@id"
+    },
+    "OWLClass_93254f77_d822_4924_bc61_4e11e23a6c30" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_93254f77_d822_4924_bc61_4e11e23a6c30"
+    },
+    "OWLClass_4eec0aad_ae89_4a03_a528_e3688e654359" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_4eec0aad_ae89_4a03_a528_e3688e654359"
+    },
+    "OWLClass_b2ed30c7_a27c_4b3c_a535_a08707fb865f" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_b2ed30c7_a27c_4b3c_a535_a08707fb865f"
+    },
+    "Comparing" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Comparing"
+    },
+    "OWLClass_5614fc30_3b0c_4345_b2ab_7f14157aec03" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_5614fc30_3b0c_4345_b2ab_7f14157aec03"
+    },
+    "Shapelet_Operations" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Shapelet_Operations"
+    },
+    "OWLClass_550a0c5b_9cf9_4fd5_8d21_931584f49f17" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_550a0c5b_9cf9_4fd5_8d21_931584f49f17"
+    },
+    "OWLClass_7737e708_54c1_4bdd_9a43_cb27cb8ebc86" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_7737e708_54c1_4bdd_9a43_cb27cb8ebc86"
+    },
+    "OWLClass_76584f62_cb62_404a_a604_1c39340d4cc3" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_76584f62_cb62_404a_a604_1c39340d4cc3"
+    },
+    "Multiply" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Multiply"
+    },
+    "OWLClass_e07dafea_40ca_4d64_9dad_f294e25dfacc" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_e07dafea_40ca_4d64_9dad_f294e25dfacc"
+    },
+    "OWLClass_85b3ae22_7625_41a0_8dfd_b5fe2c868299" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_85b3ae22_7625_41a0_8dfd_b5fe2c868299"
+    },
+    "OWLClass_4a1c6f93_51d9_49b4_856f_817dea1c2017" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_4a1c6f93_51d9_49b4_856f_817dea1c2017"
+    },
+    "OWLClass_c1ef4e02_de45_42c6_87cc_92020d218bfd" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_c1ef4e02_de45_42c6_87cc_92020d218bfd"
+    },
+    "OWLClass_371d2609_06a1_49d4_be10_b8c452552115" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_371d2609_06a1_49d4_be10_b8c452552115"
+    },
+    "Parameter_Assignment" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Parameter_Assignment"
+    },
+    "OWLClass_d3424965_cb4d_4683_8061_622ba7fdd0d4" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_d3424965_cb4d_4683_8061_622ba7fdd0d4"
+    },
+    "OWLClass_0467ada5_dc8d_4d99_b578_f57b6f28b71f" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_0467ada5_dc8d_4d99_b578_f57b6f28b71f"
+    },
+    "OWLClass_617c82cf_36f3_4aca_996a_419c553d44ee" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_617c82cf_36f3_4aca_996a_419c553d44ee"
+    },
+    "Standardization" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Standardization"
+    },
+    "OWLClass_1db6c489_35ae_48b5_9b73_4a6105bac2de" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_1db6c489_35ae_48b5_9b73_4a6105bac2de"
+    },
+    "Vote" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Vote"
+    },
+    "Projection" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Projection"
+    },
+    "OWLClass_876ef01a_0114_4095_9b27_9462e462c59e" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_876ef01a_0114_4095_9b27_9462e462c59e"
+    },
+    "Build_Histogram" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Build_Histogram"
+    },
+    "Build_Incremental_Classifier" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Build_Incremental_Classifier"
+    },
+    "Generate_Subseries_Features" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Generate_Subseries_Features"
+    },
+    "DTW_Operation" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#DTW_Operation"
+    },
+    "OWLClass_344ec0bd_e908_47ce_9288_c9890b2fd226" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_344ec0bd_e908_47ce_9288_c9890b2fd226"
+    },
+    "OWLClass_351ccbb9_7261_447d_9e50_6aa9a4348804" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_351ccbb9_7261_447d_9e50_6aa9a4348804"
+    },
+    "has3rdComponent" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#has3rdComponent",
+      "@type" : "@id"
+    },
+    "OWLClass_219f82c0_7be5_4eba_8f10_f4632881acec" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_219f82c0_7be5_4eba_8f10_f4632881acec"
+    },
+    "employMeasure" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#employMeasure",
+      "@type" : "@id"
+    },
+    "Sum" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Sum"
+    },
+    "OWLClass_71abcaff_c34a_4c92_91ae_cea9eaec1878" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_71abcaff_c34a_4c92_91ae_cea9eaec1878"
+    },
+    "OWLClass_8cdb1fe7_a8cd_4d1c_8c8f_ffefcb9b5e7b" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_8cdb1fe7_a8cd_4d1c_8c8f_ffefcb9b5e7b"
+    },
+    "Square" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Square"
+    },
+    "OWLClass_fcd3eeea_ffa5_43da_b9c2_8bb991bc7cd3" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_fcd3eeea_ffa5_43da_b9c2_8bb991bc7cd3"
+    },
+    "OWLClass_e5ce3c14_5ebe_4758_af0e_214e4f852894" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_e5ce3c14_5ebe_4758_af0e_214e4f852894"
+    },
+    "_Nearest_Neighbor" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#1_Nearest_Neighbor"
+    },
+    "OWLClass_29c67b5f_0662_442a_a0f3_2e3d8c4d7ed0" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_29c67b5f_0662_442a_a0f3_2e3d8c4d7ed0"
+    },
+    "Multiple_Coefficient_Binning" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Multiple_Coefficient_Binning"
+    },
+    "OWLClass_8f0b95da_5f5d_47f7_949c_f919d0462ece" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_8f0b95da_5f5d_47f7_949c_f919d0462ece"
+    },
+    "OWLClass_a75703d9_984d_43e8_b529_54cdc66a4529" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_a75703d9_984d_43e8_b529_54cdc66a4529"
+    },
+    "OWLClass_ab73ab97_f6af_4bd9_b2f2_ad3d20f54dfc" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_ab73ab97_f6af_4bd9_b2f2_ad3d20f54dfc"
+    },
+    "OWLClass_17634485_211b_4854_ab06_625de5e28a1e" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_17634485_211b_4854_ab06_625de5e28a1e"
+    },
+    "OWLClass_647c7026_1952_44a2_9024_98590d779998" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_647c7026_1952_44a2_9024_98590d779998"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "OWLClass_a8aa1495_fa79_4bc4_98e5_aea2290191c1" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_a8aa1495_fa79_4bc4_98e5_aea2290191c1"
+    },
+    "OWLClass_880423ee_33b3_48d1_8be7_4b0d538f8fc3" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_880423ee_33b3_48d1_8be7_4b0d538f8fc3"
+    },
+    "Generate_Random_Subseries" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Generate_Random_Subseries"
+    },
+    "has2ndComponent" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#has2ndComponent",
+      "@type" : "@id"
+    },
+    "OWLClass_2a1e6216_de28_4a55_ab7c_14c748a007d6" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_2a1e6216_de28_4a55_ab7c_14c748a007d6"
+    },
+    "OWLClass_c4176b10_a64d_4af0_8370_e42fda3ef7fd" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_c4176b10_a64d_4af0_8370_e42fda3ef7fd"
+    },
+    "OWLClass_fc564231_0029_4011_a9dc_a4fcf75a60c9" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_fc564231_0029_4011_a9dc_a4fcf75a60c9"
+    },
+    "OWLClass_3038073e_51d2_4f77_b291_f42b19f54d3e" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_3038073e_51d2_4f77_b291_f42b19f54d3e"
+    },
+    "OWLClass_0f814330_8c99_4efb_8f0d_a911200ab5c2" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_0f814330_8c99_4efb_8f0d_a911200ab5c2"
+    },
+    "Find_Shapelets" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Find_Shapelets"
+    },
+    "OWLClass_8a062542_3963_4156_9330_b6b5d26141f6" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_8a062542_3963_4156_9330_b6b5d26141f6"
+    },
+    "Feature_Extraction" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Feature_Extraction"
+    },
+    "OWLClass_d33ea30c_c095_4aca_9d44_c08ca8fc24f1" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_d33ea30c_c095_4aca_9d44_c08ca8fc24f1"
+    },
+    "OWLClass_9eef7214_df5b_43c8_b2d8_1a75d103394e" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_9eef7214_df5b_43c8_b2d8_1a75d103394e"
+    },
+    "OWLObjectProperty_d4e822c3_b424_4e15_a069_477ae82b33c1" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLObjectProperty_d4e822c3_b424_4e15_a069_477ae82b33c1",
+      "@type" : "@id"
+    },
+    "OWLClass_d87e69b8_f698_415d_8e7a_94e108d66d43" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_d87e69b8_f698_415d_8e7a_94e108d66d43"
+    },
+    "OWLClass_2066cdb1_5391_4aea_9511_458e9877305c" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_2066cdb1_5391_4aea_9511_458e9877305c"
+    },
+    "OWLClass_2ee06a36_66ab_4dbb_844f_7cca0a4908ca" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_2ee06a36_66ab_4dbb_844f_7cca0a4908ca"
+    },
+    "OWLClass_18b955f7_3db0_4cda_81ad_bbf483b6f593" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_18b955f7_3db0_4cda_81ad_bbf483b6f593"
+    },
+    "OWLClass_206a099b_4128_4930_b693_1c69b24d5a4d" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_206a099b_4128_4930_b693_1c69b24d5a4d"
+    },
+    "OWLClass_6721c008_ab69_450b_a938_b0267b65a427" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_6721c008_ab69_450b_a938_b0267b65a427"
+    },
+    "OWLClass_f4688694_dfe4_496a_8c2d_01b01f77b40e" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_f4688694_dfe4_496a_8c2d_01b01f77b40e"
+    },
+    "OWLClass_e346043b_15ad_447c_874c_42c71d230fa3" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_e346043b_15ad_447c_874c_42c71d230fa3"
+    },
+    "OWLClass_e1a610e7_f01b_4c58_97d8_14436e425344" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_e1a610e7_f01b_4c58_97d8_14436e425344"
+    },
+    "OWLClass_2bb88a2d_38d4_4aa0_a5fd_77866577e460" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_2bb88a2d_38d4_4aa0_a5fd_77866577e460"
+    },
+    "OWLClass_6dd91c25_995b_49a4_8b68_71b2674fdf1a" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_6dd91c25_995b_49a4_8b68_71b2674fdf1a"
+    },
+    "Operation" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Operation"
+    },
+    "OWLClass_9e8aa10f_7b80_4366_9e78_4b5b771c40d1" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_9e8aa10f_7b80_4366_9e78_4b5b771c40d1"
+    },
+    "OWLClass_a631c772_eed0_4847_abfa_2b8e43692bc5" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_a631c772_eed0_4847_abfa_2b8e43692bc5"
+    },
+    "OWLObjectProperty_cd102ad2_1da4_406a_859d_b94174e5e3dc" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLObjectProperty_cd102ad2_1da4_406a_859d_b94174e5e3dc",
+      "@type" : "@id"
+    },
+    "Random_Projection" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Random_Projection"
+    },
+    "OWLClass_2ef496bb_95d3_4601_9135_ac2e12098dc8" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_2ef496bb_95d3_4601_9135_ac2e12098dc8"
+    },
+    "OWLClass_534898d9_649b_46a3_84d7_0ee8551db550" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_534898d9_649b_46a3_84d7_0ee8551db550"
+    },
+    "More_Than" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#More_Than"
+    },
+    "OWLClass_5ee200f0_552f_4cec_8a7b_2c9247ab67dd" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_5ee200f0_552f_4cec_8a7b_2c9247ab67dd"
+    },
+    "Numerosity_Reduction" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Numerosity_Reduction"
+    },
+    "OWLClass_9507e80f_098e_47a7_8526_ab2b5be5608a" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_9507e80f_098e_47a7_8526_ab2b5be5608a"
+    },
+    "OWLClass_c181a8b7_0a66_4e79_8334_78373b6c169b" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_c181a8b7_0a66_4e79_8334_78373b6c169b"
+    },
+    "OWLClass_55ef19f0_bf5c_42bb_b571_5646ee304713" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_55ef19f0_bf5c_42bb_b571_5646ee304713"
+    },
+    "OWLClass_ab74c6ae_d550_44d7_b7e5_7e8b677717b0" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_ab74c6ae_d550_44d7_b7e5_7e8b677717b0"
+    },
+    "OWLClass_028cf2ad_808f_45f7_8142_1aa824a87038" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_028cf2ad_808f_45f7_8142_1aa824a87038"
+    },
+    "OWLClass_5b72dc71_1132_49fa_aed3_ef62f2490cfb" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_5b72dc71_1132_49fa_aed3_ef62f2490cfb"
+    },
+    "OWLClass_c4316020_d4d6_4c20_b075_a09ad13c889d" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_c4316020_d4d6_4c20_b075_a09ad13c889d"
+    },
+    "Data_Structures" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Data_Structures"
+    },
+    "OWLClass_cbfb7a48_3e3a_40e9_a1c9_008affff0613" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_cbfb7a48_3e3a_40e9_a1c9_008affff0613"
+    },
+    "employAlgorithm" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#employAlgorithm",
+      "@type" : "@id"
+    },
+    "OWLClass_d07e9858_639e_4b07_9392_a62209518b7b" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_d07e9858_639e_4b07_9392_a62209518b7b"
+    },
+    "OWLClass_091fa4d7_8cc2_4254_a6a5_34d9efdf1bde" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_091fa4d7_8cc2_4254_a6a5_34d9efdf1bde"
+    },
+    "OWLClass_6297a4bf_8169_4bc9_9b83_5fc46f3653d6" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_6297a4bf_8169_4bc9_9b83_5fc46f3653d6"
+    },
+    "OWLClass_35c72271_ac6f_4e9c_8dc3_377bd120b68d" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_35c72271_ac6f_4e9c_8dc3_377bd120b68d"
+    },
+    "OWLClass_997f67a4_86aa_43fd_80e2_5a953eb1a2d7" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_997f67a4_86aa_43fd_80e2_5a953eb1a2d7"
+    },
+    "OWLClass_12ca626f_92ba_43ea_8cd8_3b57fff3ab1a" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_12ca626f_92ba_43ea_8cd8_3b57fff3ab1a"
+    },
+    "OWLClass_0504015d_699d_46ad_b0a7_e3c1f59b1024" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_0504015d_699d_46ad_b0a7_e3c1f59b1024"
+    },
+    "OWLClass_d14a8a9e_9c28_43d9_8751_c48ece101c28" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_d14a8a9e_9c28_43d9_8751_c48ece101c28"
+    },
+    "OWLClass_e65775f2_4729_4dbc_a32f_7e33bf8f9ecd" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_e65775f2_4729_4dbc_a32f_7e33bf8f9ecd"
+    },
+    "OWLClass_588d331d_de4f_412a_8c65_e09f8414c5e0" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_588d331d_de4f_412a_8c65_e09f8414c5e0"
+    },
+    "Coarse-grained" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Coarse-grained"
+    },
+    "Calculation" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Calculation"
+    },
+    "OWLClass_463888a1_fce8_4652_86d1_baadc44cbe9e" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_463888a1_fce8_4652_86d1_baadc44cbe9e"
+    },
+    "Generate_Random_Subseries_Locations" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Generate_Random_Subseries_Locations"
+    },
+    "OWLClass_7a0e0085_8ad5_422b_afe4_14194ad9418d" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_7a0e0085_8ad5_422b_afe4_14194ad9418d"
+    },
+    "OWLClass_3df25647_6427_48e7_bddd_e8d0fc913553" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_3df25647_6427_48e7_bddd_e8d0fc913553"
+    },
+    "OWLClass_625a5d6b_bd25_4559_8caf_82c49400b6a7" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_625a5d6b_bd25_4559_8caf_82c49400b6a7"
+    },
+    "OWLClass_2f8c46a4_d0fc_4ba3_ba32_4d0666a8d9a9" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_2f8c46a4_d0fc_4ba3_ba32_4d0666a8d9a9"
+    },
+    "Intervals_Operations" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Intervals_Operations"
+    },
+    "OWLClass_0fdf6760_b7e7_4932_add8_9f1fe9f7e4a1" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_0fdf6760_b7e7_4932_add8_9f1fe9f7e4a1"
+    },
+    "hasGeneralProcess" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#hasGeneralProcess",
+      "@type" : "@id"
+    },
+    "OWLObjectProperty_12421dc2_b700_48c2_945a_b6a268f89949" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLObjectProperty_12421dc2_b700_48c2_945a_b6a268f89949",
+      "@type" : "@id"
+    },
+    "OWLClass_5abfb0fd_faeb_4700_84c4_e4ebf827f58e" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_5abfb0fd_faeb_4700_84c4_e4ebf827f58e"
+    },
+    "OWLClass_289e94d2_3416_4b51_9d6d_8a00aedc0ec6" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_289e94d2_3416_4b51_9d6d_8a00aedc0ec6"
+    },
+    "OWLClass_484aac83_46f5_4211_8b37_f7d5b9c2a00c" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_484aac83_46f5_4211_8b37_f7d5b9c2a00c"
+    },
+    "OWLClass_cb05b0ff_0500_428a_a902_b87da38ed5cd" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_cb05b0ff_0500_428a_a902_b87da38ed5cd"
+    },
+    "OWLClass_c57194e6_a563_44eb_8923_e2994cfeadf2" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_c57194e6_a563_44eb_8923_e2994cfeadf2"
+    },
+    "OWLClass_4c45775c_22ba_49f7_975d_16bec4c62919" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_4c45775c_22ba_49f7_975d_16bec4c62919"
+    },
+    "OWLClass_22173a5e_2434_4ce4_b573_4e8f84423927" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_22173a5e_2434_4ce4_b573_4e8f84423927"
+    },
+    "OWLClass_28efd538_744e_43c2_aec3_7ef4c596d791" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_28efd538_744e_43c2_aec3_7ef4c596d791"
+    },
+    "OWLClass_77d88595_0a78_43d9_93a7_9032c7bc49bc" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_77d88595_0a78_43d9_93a7_9032c7bc49bc"
+    },
+    "OWLClass_e634dc98_399a_49f7_99e1_c627e3fc166a" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_e634dc98_399a_49f7_99e1_c627e3fc166a"
+    },
+    "OWLClass_5e259100_0adc_467f_98bb_396051be08b4" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_5e259100_0adc_467f_98bb_396051be08b4"
+    },
+    "OWLClass_2c47025f_aa20_496a_8571_58267f47cb6b" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_2c47025f_aa20_496a_8571_58267f47cb6b"
+    },
+    "OWLClass_8a186a15_1747_4993_8c33_e3fc37bd19a3" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_8a186a15_1747_4993_8c33_e3fc37bd19a3"
+    },
+    "OWLClass_db3f5c93_071b_4a4d_b8e8_5c1cbd18f5f5" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_db3f5c93_071b_4a4d_b8e8_5c1cbd18f5f5"
+    },
+    "OWLClass_2abcc1c2_eec9_46ba_a078_f7ff4fb531ad" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_2abcc1c2_eec9_46ba_a078_f7ff4fb531ad"
+    },
+    "OWLClass_afda2f16_214c_4b89_b148_b4355c9d3cbe" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_afda2f16_214c_4b89_b148_b4355c9d3cbe"
+    },
+    "hasFinalComponent" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#hasFinalComponent",
+      "@type" : "@id"
+    },
+    "OWLClass_a4e1dd36_7bed_40ef_a556_417efd5c86ba" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_a4e1dd36_7bed_40ef_a556_417efd5c86ba"
+    },
+    "OWLClass_69f644e9_ee85_44a7_99a1_fd9521610ac7" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_69f644e9_ee85_44a7_99a1_fd9521610ac7"
+    },
+    "OWLClass_d5a3bb1f_7a1d_4a0f_bded_e0a816816b16" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_d5a3bb1f_7a1d_4a0f_bded_e0a816816b16"
+    },
+    "hasProcess" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#hasProcess",
+      "@type" : "@id"
+    },
+    "OWLClass_512205bf_ae73_4480_a031_e30716e64a90" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_512205bf_ae73_4480_a031_e30716e64a90"
+    },
+    "Count_Distribution" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Count_Distribution"
+    },
+    "Output_Features" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Output_Features"
+    },
+    "Close_To" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Close_To"
+    },
+    "Diff" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Diff"
+    },
+    "OWLClass_1aa95333_dccd_4d20_bcb5_0602d0d2541c" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_1aa95333_dccd_4d20_bcb5_0602d0d2541c"
+    },
+    "OWLClass_36fb36cc_0267_45f0_9696_c332ce24ed26" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_36fb36cc_0267_45f0_9696_c332ce24ed26"
+    },
+    "OWLClass_25ae8c40_f3fb_4399_a856_61b22be16d12" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_25ae8c40_f3fb_4399_a856_61b22be16d12"
+    },
+    "OWLClass_04fe91ea_654c_4c26_9dcc_307107dd0aa4" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_04fe91ea_654c_4c26_9dcc_307107dd0aa4"
+    },
+    "OWLClass_d5c18b0c_2dce_4771_876e_edba5a1e1253" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_d5c18b0c_2dce_4771_876e_edba5a1e1253"
+    },
+    "OWLClass_cd60cfcd_cad3_49fc_9814_175ac70a04dc" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_cd60cfcd_cad3_49fc_9814_175ac70a04dc"
+    },
+    "OWLClass_18dd1e59_0908_432c_a390_b2995d77147d" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_18dd1e59_0908_432c_a390_b2995d77147d"
+    },
+    "OWLClass_dca5aa5d_8272_4c68_8bd1_adf2fb346f57" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_dca5aa5d_8272_4c68_8bd1_adf2fb346f57"
+    },
+    "OWLClass_a84d7ec1_7f20_4321_9e17_885b85bce77c" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_a84d7ec1_7f20_4321_9e17_885b85bce77c"
+    },
+    "Less_Than" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Less_Than"
+    },
+    "Discretise_Probabilities" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Discretise_Probabilities"
+    },
+    "Get_OOB_Probabilities" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Get_OOB_Probabilities"
+    },
+    "OWLClass_02e47c9d_8244_44d1_8457_eb6cb4c9c02c" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_02e47c9d_8244_44d1_8457_eb6cb4c9c02c"
+    },
+    "OWLClass_3b03605b_4cb1_4cf3_8586_d3bdf4ceab48" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_3b03605b_4cb1_4cf3_8586_d3bdf4ceab48"
+    },
+    "OWLClass_d657410a_cab2_491f_9b3b_f7cd2bc4d430" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_d657410a_cab2_491f_9b3b_f7cd2bc4d430"
+    },
+    "OWLClass_b512a289_df2a_4b93_9334_5d445bed3bb4" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_b512a289_df2a_4b93_9334_5d445bed3bb4"
+    },
+    "OWLClass_04d807ee_d2b2_48e3_8865_0e30b750eee9" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_04d807ee_d2b2_48e3_8865_0e30b750eee9"
+    },
+    "OWLClass_9e37db28_08b7_4bc2_af46_4a7cb3fb43a0" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_9e37db28_08b7_4bc2_af46_4a7cb3fb43a0"
+    },
+    "OWLClass_8b24316b_46fe_4382_b7e3_b31ce891f73e" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_8b24316b_46fe_4382_b7e3_b31ce891f73e"
+    },
+    "OWLClass_4bd79a02_47c6_4aa4_934c_2e86c5ebdcd1" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_4bd79a02_47c6_4aa4_934c_2e86c5ebdcd1"
+    },
+    "OWLObjectProperty_497bf028_841f_4b58_806c_9bd24a5c8f70" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLObjectProperty_497bf028_841f_4b58_806c_9bd24a5c8f70",
+      "@type" : "@id"
+    },
+    "OWLClass_78ca5653_bafd_4a52_ad1d_3b2c2e97b8ea" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_78ca5653_bafd_4a52_ad1d_3b2c2e97b8ea"
+    },
+    "OWLClass_d571c5e1_3186_4bd6_8167_68a7dcf15989" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_d571c5e1_3186_4bd6_8167_68a7dcf15989"
+    },
+    "OWLClass_cd8cae28_6cdd_4036_b7d1_c91d4a91fba2" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_cd8cae28_6cdd_4036_b7d1_c91d4a91fba2"
+    },
+    "OWLClass_dc147e35_6361_497e_bbd8_a33491dade45" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_dc147e35_6361_497e_bbd8_a33491dade45"
+    },
+    "OWLClass_95fed3ac_2620_4ae6_921c_464fdd6eb7ee" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_95fed3ac_2620_4ae6_921c_464fdd6eb7ee"
+    },
+    "OWLClass_bdd43ee9_8e09_411d_8826_759139ff6428" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_bdd43ee9_8e09_411d_8826_759139ff6428"
+    },
+    "OWLClass_11febce2_edf2_4cc9_a86b_89dd28468bf2" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_11febce2_edf2_4cc9_a86b_89dd28468bf2"
+    },
+    "Plus" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Plus"
+    },
+    "Iterative" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Iterative"
+    },
+    "OWLClass_303466b4_616f_4629_91be_ced7e138e5de" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_303466b4_616f_4629_91be_ced7e138e5de"
+    },
+    "OWLClass_14ea8a86_e6a9_4cf2_bdf2_066ce4c74839" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_14ea8a86_e6a9_4cf2_bdf2_066ce4c74839"
+    },
+    "OWLClass_85d6a912_3606_428b_9e6e_c82ebae150c9" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_85d6a912_3606_428b_9e6e_c82ebae150c9"
+    },
+    "OWLClass_f62a8e8b_6bc5_48cd_a13b_8a4d5f87f151" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_f62a8e8b_6bc5_48cd_a13b_8a4d5f87f151"
+    },
+    "OWLClass_5607b078_fce7_4f4a_9a53_d92afc59e640" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_5607b078_fce7_4f4a_9a53_d92afc59e640"
+    },
+    "OWLClass_c00748a3_5fea_4534_91e7_b73e90cdfafd" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_c00748a3_5fea_4534_91e7_b73e90cdfafd"
+    },
+    "OWLClass_df5127c2_91cd_4966_af81_4a1d174768a1" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_df5127c2_91cd_4966_af81_4a1d174768a1"
+    },
+    "Process_for_Feature_based_Methods" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Process_for_Feature_based_Methods"
+    },
+    "OWLClass_3f6486f4_965c_46d0_954b_01efb80bd365" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_3f6486f4_965c_46d0_954b_01efb80bd365"
+    },
+    "OWLClass_063deb12_a128_43fc_a801_67d255baf6b2" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_063deb12_a128_43fc_a801_67d255baf6b2"
+    },
+    "OWLClass_2265c08f_3d4a_4273_9e63_566d24a7ed92" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_2265c08f_3d4a_4273_9e63_566d24a7ed92"
+    },
+    "OWLClass_29ac7340_8a9b_4279_a2e3_dcf65cd0a7c2" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_29ac7340_8a9b_4279_a2e3_dcf65cd0a7c2"
+    },
+    "OWLClass_fbdcf490_eef2_4584_80f7_948334d7f110" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_fbdcf490_eef2_4584_80f7_948334d7f110"
+    },
+    "OWLClass_c45c4bfb_a638_4089_bb6a_83d61a06f30e" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_c45c4bfb_a638_4089_bb6a_83d61a06f30e"
+    },
+    "OWLClass_1127d4c3_d466_4d01_8c1b_8c644487e565" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_1127d4c3_d466_4d01_8c1b_8c644487e565"
+    },
+    "OWLClass_312d7642_0f74_48a7_b58f_abaaf341a236" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_312d7642_0f74_48a7_b58f_abaaf341a236"
+    },
+    "OWLClass_11394d1f_54d7_48c3_8638_b947b10ff5da" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_11394d1f_54d7_48c3_8638_b947b10ff5da"
+    },
+    "OWLClass_54b9d1a2_f97d_4555_a39f_3fd69d567256" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_54b9d1a2_f97d_4555_a39f_3fd69d567256"
+    },
+    "OWLClass_7da60476_8c5e_4bee_b07d_f5d2684601e0" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_7da60476_8c5e_4bee_b07d_f5d2684601e0"
+    },
+    "OWLClass_c2caec64_2534_434e_b75d_23874377d6ad" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_c2caec64_2534_434e_b75d_23874377d6ad"
+    },
+    "OWLClass_6cc25919_e9bb_4edc_97c4_75bb1e0c3321" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_6cc25919_e9bb_4edc_97c4_75bb1e0c3321"
+    },
+    "OWLClass_7b8dc9f1_46c1_4cb3_b8e1_3bc44c089547" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_7b8dc9f1_46c1_4cb3_b8e1_3bc44c089547"
+    },
+    "Build_Random_Regression_Tree" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Build_Random_Regression_Tree"
+    },
+    "Find_Best_SAX" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Find_Best_SAX"
+    },
+    "OWLClass_387d7597_0a6f_4203_8101_7f5f883b838a" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_387d7597_0a6f_4203_8101_7f5f883b838a"
+    },
+    "OWLClass_a26b2e9e_c8a1_4ed9_9ae0_46f6cfd277ac" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_a26b2e9e_c8a1_4ed9_9ae0_46f6cfd277ac"
+    },
+    "OWLClass_e4f5cbbb_d00f_43c2_8060_5e670782eea9" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_e4f5cbbb_d00f_43c2_8060_5e670782eea9"
+    },
+    "Arff" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Arff"
+    },
+    "OWLClass_aee3d389_bffd_4a83_8529_9b227c1fcb14" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_aee3d389_bffd_4a83_8529_9b227c1fcb14"
+    },
+    "OWLObjectProperty_6e934dd9_0d6a_4483_99e8_4f650da296e7" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLObjectProperty_6e934dd9_0d6a_4483_99e8_4f650da296e7",
+      "@type" : "@id"
+    },
+    "Poor_Structure" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Poor_Structure"
+    },
+    "OWLClass_245cd6c8_a292_4b22_a5d2_e29e9100b564" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_245cd6c8_a292_4b22_a5d2_e29e9100b564"
+    },
+    "OWLClass_9ba0ea9d_e316_4359_9e69_4ff5e2f53144" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_9ba0ea9d_e316_4359_9e69_4ff5e2f53144"
+    },
+    "Fine-grained" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Fine-grained"
+    },
+    "OWLClass_32b25799_b919_4c9b_af9d_bbdd86402c30" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_32b25799_b919_4c9b_af9d_bbdd86402c30"
+    },
+    "OWLClass_5c306092_3a61_42b9_bcd0_a7af06245dc4" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_5c306092_3a61_42b9_bcd0_a7af06245dc4"
+    },
+    "Txt" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Txt"
+    },
+    "OWLClass_7bc6fb66_292e_40ff_90ca_e88aef6fce07" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_7bc6fb66_292e_40ff_90ca_e88aef6fce07"
+    },
+    "OWLClass_ac4752f1_7fd1_44ef_9337_f0b1611c82e1" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_ac4752f1_7fd1_44ef_9337_f0b1611c82e1"
+    },
+    "OWLClass_4cc2ed24_c0e0_4737_b38a_5f4f2753907a" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_4cc2ed24_c0e0_4737_b38a_5f4f2753907a"
+    },
+    "OWLClass_7c5f7d0c_c533_4452_9256_5223abb496b2" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_7c5f7d0c_c533_4452_9256_5223abb496b2"
+    },
+    "OWLClass_03223e1b_3527_4221_849d_4f435c95f6de" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_03223e1b_3527_4221_849d_4f435c95f6de"
+    },
+    "OWLClass_d0a9c0cd_7393_4e71_a9be_fd5fd3c2efd9" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_d0a9c0cd_7393_4e71_a9be_fd5fd3c2efd9"
+    },
+    "OWLClass_ddf6e556_09a0_4944_a195_8832f9c62b18" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_ddf6e556_09a0_4944_a195_8832f9c62b18"
+    },
+    "OWLClass_66aad4ff_494f_49c7_8bd3_f4112f89f066" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_66aad4ff_494f_49c7_8bd3_f4112f89f066"
+    },
+    "OWLClass_1b09f861_9592_4819_ba90_54f331decd14" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_1b09f861_9592_4819_ba90_54f331decd14"
+    },
+    "Select_Length" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Select_Length"
+    },
+    "OWLClass_c784a828_2f10_42ba_a262_51ab67253632" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_c784a828_2f10_42ba_a262_51ab67253632"
+    },
+    "OWLObjectProperty_2d695fd0_517e_42cc_bb6a_4ecb0f1a1735" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLObjectProperty_2d695fd0_517e_42cc_bb6a_4ecb0f1a1735",
+      "@type" : "@id"
+    },
+    "Classification" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Classification"
+    },
+    "Normalization" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Normalization"
+    },
+    "OWLClass_9d3e6d41_ba55_4037_b037_072a62bb789c" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_9d3e6d41_ba55_4037_b037_072a62bb789c"
+    },
+    "OWLClass_75a04163_81e7_42f2_9eac_c1e17d205465" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_75a04163_81e7_42f2_9eac_c1e17d205465"
+    },
+    "OWLClass_98e83f8d_128a_4719_983d_5551ed57caf3" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_98e83f8d_128a_4719_983d_5551ed57caf3"
+    },
+    "FS_Operations" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#FS_Operations"
+    },
+    "OWLClass_31b23434_799a_4ddd_9e69_28a3167dc181" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_31b23434_799a_4ddd_9e69_28a3167dc181"
+    },
+    "OWLClass_4d79c5ff_5010_47b3_8237_3c1dc342eb40" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_4d79c5ff_5010_47b3_8237_3c1dc342eb40"
+    },
+    "OWLClass_8ec76f48_13ee_4229_a5a4_df10dc281623" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_8ec76f48_13ee_4229_a5a4_df10dc281623"
+    },
+    "OWLClass_8dc55e31_0cab_4edc_9151_da818899d8d7" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_8dc55e31_0cab_4edc_9151_da818899d8d7"
+    },
+    "has1stComponent" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#has1stComponent",
+      "@type" : "@id"
+    },
+    "OWLClass_88ad727b_b928_4721_b266_519803505047" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_88ad727b_b928_4721_b266_519803505047"
+    },
+    "OWLClass_a046beb3_d8cb_4dd1_8c13_b25ea7c4f268" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_a046beb3_d8cb_4dd1_8c13_b25ea7c4f268"
+    },
+    "OWLClass_e727f68b_d15d_44a2_9e88_949a4f5a0c27" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_e727f68b_d15d_44a2_9e88_949a4f5a0c27"
+    },
+    "OWLClass_15ae048f_0799_4ed2_8a97_7419fb1bb003" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_15ae048f_0799_4ed2_8a97_7419fb1bb003"
+    },
+    "OWLClass_9693de17_010a_4926_bce1_d4730edac485" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_9693de17_010a_4926_bce1_d4730edac485"
+    },
+    "OWLClass_dfcfd243_2081_489a_a085_190b59e2a064" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_dfcfd243_2081_489a_a085_190b59e2a064"
+    },
+    "OWLClass_c85131e4_399b_4754_b130_d77746e8e14e" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_c85131e4_399b_4754_b130_d77746e8e14e"
+    },
+    "OWLClass_17c4c897_8b68_4c6e_86c4_14efa2f3cc0f" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_17c4c897_8b68_4c6e_86c4_14efa2f3cc0f"
+    },
+    "Derivation" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Derivation"
+    },
+    "OWLClass_6976c879_3c29_4e69_8a68_b6ce5cfdd24f" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_6976c879_3c29_4e69_8a68_b6ce5cfdd24f"
+    },
+    "OWLClass_8dfe63b5_65d4_4064_a6d9_a0e47a70c8a6" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_8dfe63b5_65d4_4064_a6d9_a0e47a70c8a6"
+    },
+    "OWLClass_36be16a6_2d5f_4acd_a625_5fead2f691b1" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_36be16a6_2d5f_4acd_a625_5fead2f691b1"
+    },
+    "Discretization" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Discretization"
+    },
+    "OWLClass_808fac55_8888_4e75_8ea0_1177e06b52fc" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_808fac55_8888_4e75_8ea0_1177e06b52fc"
+    },
+    "OWLClass_e4ae1034_3b52_43fd_a467_117ce8092225" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_e4ae1034_3b52_43fd_a467_117ce8092225"
+    },
+    "OWLClass_db62956d_26ce_4e65_b7ec_b76caf920062" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_db62956d_26ce_4e65_b7ec_b76caf920062"
+    },
+    "OWLClass_0a2690ef_75c9_4920_aa65_540f7c347f80" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_0a2690ef_75c9_4920_aa65_540f7c347f80"
+    },
+    "OWLClass_f4a120b2_813a_4ef4_a9ee_1180b7850a3b" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_f4a120b2_813a_4ef4_a9ee_1180b7850a3b"
+    },
+    "OWLClass_5ac1a4c5_d146_4808_9c93_94fcbce86912" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_5ac1a4c5_d146_4808_9c93_94fcbce86912"
+    },
+    "OWLClass_b8d7957c_0156_4136_a126_47ed1cec5c29" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_b8d7957c_0156_4136_a126_47ed1cec5c29"
+    },
+    "OWLClass_dc79a8e3_7733_49b6_b342_26a2222e632d" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_dc79a8e3_7733_49b6_b342_26a2222e632d"
+    },
+    "Generate_Equal_Width_Inetervals" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Generate_Equal_Width_Inetervals"
+    },
+    "Estimation_Method" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Estimation_Method"
+    },
+    "OWLClass_ed6156e3_c680_42c3_9f48_6cafa1bf492c" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_ed6156e3_c680_42c3_9f48_6cafa1bf492c"
+    },
+    "OWLClass_eb07ef13_7023_4c15_a2a0_ff0cd60e22e4" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_eb07ef13_7023_4c15_a2a0_ff0cd60e22e4"
+    },
+    "Form_Histograms" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Form_Histograms"
+    },
+    "OWLClass_e673c5d1_8d91_4b7d_ab3a_1f3f656caf04" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_e673c5d1_8d91_4b7d_ab3a_1f3f656caf04"
+    },
+    "Normal" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Normal"
+    },
+    "OWLClass_5b12ec32_5893_4e3c_8252_00f2cd6b6131" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_5b12ec32_5893_4e3c_8252_00f2cd6b6131"
+    },
+    "OWLClass_2ddfd111_62b9_41da_980d_05e88ab5af64" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_2ddfd111_62b9_41da_980d_05e88ab5af64"
+    },
+    "OWLClass_5a35615a_4b75_450e_97a7_fd8bff6f063d" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_5a35615a_4b75_450e_97a7_fd8bff6f063d"
+    },
+    "OWLClass_de677fbd_e5fb_4a9c_af36_3f46b1666915" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_de677fbd_e5fb_4a9c_af36_3f46b1666915"
+    },
+    "OWLClass_770b0959_1a1d_4412_b3aa_01fadec392f5" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_770b0959_1a1d_4412_b3aa_01fadec392f5"
+    },
+    "LS_Operations" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#LS_Operations"
+    },
+    "OWLClass_6481fb86_cc80_4faa_a777_79dc5c4a34b6" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_6481fb86_cc80_4faa_a777_79dc5c4a34b6"
+    },
+    "OWLClass_fe7c1a84_dc7b_46ed_b7a6_2dccf849e63f" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_fe7c1a84_dc7b_46ed_b7a6_2dccf849e63f"
+    },
+    "OWLObjectProperty_03d3d9ec_2a50_47ec_b949_959be26d919d" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLObjectProperty_03d3d9ec_2a50_47ec_b949_959be26d919d",
+      "@type" : "@id"
+    },
+    "OWLClass_21932e18_c75b_486b_9113_78eeb3c7fdaf" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_21932e18_c75b_486b_9113_78eeb3c7fdaf"
+    },
+    "OWLObjectProperty_ab1443f2_9ae5_4716_80dd_fe1d775d6474" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLObjectProperty_ab1443f2_9ae5_4716_80dd_fe1d775d6474",
+      "@type" : "@id"
+    },
+    "OWLClass_fd63c2b4_d896_4351_a0bb_8029b2b7f752" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_fd63c2b4_d896_4351_a0bb_8029b2b7f752"
+    },
+    "Process" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Process"
+    },
+    "OWLClass_8f02bbd1_1fad_4742_bd16_c09600b64a4b" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_8f02bbd1_1fad_4742_bd16_c09600b64a4b"
+    },
+    "LPS_Operation" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#LPS_Operation"
+    },
+    "OWLClass_66172925_74dc_4585_8c91_9bff05ab9bf2" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_66172925_74dc_4585_8c91_9bff05ab9bf2"
+    },
+    "OWLClass_ed277698_fd35_4ad5_a19c_6ed24f5a407b" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_ed277698_fd35_4ad5_a19c_6ed24f5a407b"
+    },
+    "OWLClass_8054819f_23fb_4a4d_ac76_27dbcedb7e45" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_8054819f_23fb_4a4d_ac76_27dbcedb7e45"
+    },
+    "OWLClass_f26981d0_fd6c_44e2_a953_446af3d9d28d" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_f26981d0_fd6c_44e2_a953_446af3d9d28d"
+    },
+    "Probability_Estimate" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Probability_Estimate"
+    },
+    "OWLClass_cd9b6bc5_8b4c_4fe7_ac08_072c49c5d0bd" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_cd9b6bc5_8b4c_4fe7_ac08_072c49c5d0bd"
+    },
+    "OWLClass_c6dc7025_3c44_4037_8e03_442b208301a5" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_c6dc7025_3c44_4037_8e03_442b208301a5"
+    },
+    "OWLClass_e60c457d_a669_495d_b2e8_edac2d0de5bf" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_e60c457d_a669_495d_b2e8_edac2d0de5bf"
+    },
+    "OWLClass_3420cb41_d86e_4f06_88d5_789f74f2daf4" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_3420cb41_d86e_4f06_88d5_789f74f2daf4"
+    },
+    "OWLClass_22e86449_3de1_40c3_8938_e7f6f1b3ff6d" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_22e86449_3de1_40c3_8938_e7f6f1b3ff6d"
+    },
+    "OWLClass_39bd4304_a66f_4403_8892_fc4575261e0a" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_39bd4304_a66f_4403_8892_fc4575261e0a"
+    },
+    "OWLClass_3af7196b_36a3_4a78_a1f1_62e42ff4ad54" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_3af7196b_36a3_4a78_a1f1_62e42ff4ad54"
+    },
+    "OWLClass_2df97c00_4d4a_4704_bfd3_aee8bbf28f34" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_2df97c00_4d4a_4704_bfd3_aee8bbf28f34"
+    },
+    "OWLClass_f8f2be83_150c_4b60_b9fd_4a596ebed5fc" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_f8f2be83_150c_4b60_b9fd_4a596ebed5fc"
+    },
+    "OWLClass_31eff0e8_3897_48cf_9b6a_c1b61f9e28f5" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_31eff0e8_3897_48cf_9b6a_c1b61f9e28f5"
+    },
+    "OWLClass_a3ce7a3a_ba6f_4fe6_a374_ea1bb824a6ba" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_a3ce7a3a_ba6f_4fe6_a374_ea1bb824a6ba"
+    },
+    "OWLClass_cf455c6b_e7d5_4e3d_8f99_872000c3df0d" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_cf455c6b_e7d5_4e3d_8f99_872000c3df0d"
+    },
+    "OWLClass_15666b94_87a0_4cd1_9b07_4ffb61a61d4b" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_15666b94_87a0_4cd1_9b07_4ffb61a61d4b"
+    },
+    "employApproach" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#employApproach",
+      "@type" : "@id"
+    },
+    "OWLClass_f5fe3d88_b2ee_45aa_9280_06ba8566e576" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_f5fe3d88_b2ee_45aa_9280_06ba8566e576"
+    },
+    "OWLClass_a19143ed_7dee_49f3_b2be_66ce8b92fedc" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_a19143ed_7dee_49f3_b2be_66ce8b92fedc"
+    },
+    "OWLClass_79ca8462_b12f_43d6_97f2_e6ecc9f3bca8" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_79ca8462_b12f_43d6_97f2_e6ecc9f3bca8"
+    },
+    "OWLClass_47f3c077_6051_41f6_9354_da7b5b6f07c1" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_47f3c077_6051_41f6_9354_da7b5b6f07c1"
+    },
+    "Cross_Validation" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Cross_Validation"
+    },
+    "has4thComponent" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#has4thComponent",
+      "@type" : "@id"
+    },
+    "Build_Classifier" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Build_Classifier"
+    },
+    "OWLClass_3de26e79_68b3_4ad5_b56f_4ffda414bde9" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_3de26e79_68b3_4ad5_b56f_4ffda414bde9"
+    },
+    "OWLClass_156e0756_9b6c_49e2_b424_9ecad33ec497" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_156e0756_9b6c_49e2_b424_9ecad33ec497"
+    },
+    "OWLClass_1421b90d_cb32_4e0c_bbdb_9326bac1485b" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_1421b90d_cb32_4e0c_bbdb_9326bac1485b"
+    },
+    "OWLClass_e78fe411_7c5f_4ff6_8989_323b2fbacde1" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_e78fe411_7c5f_4ff6_8989_323b2fbacde1"
+    },
+    "OWLClass_41a6fa34_5585_47fb_af91_d1096704b9fb" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_41a6fa34_5585_47fb_af91_d1096704b9fb"
+    },
+    "OWLClass_f1510e6d_d0d9_4ce5_8153_d52574a15d14" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_f1510e6d_d0d9_4ce5_8153_d52574a15d14"
+    },
+    "OWLClass_73b71a7a_704d_4d10_8f8e_90c724c59f4c" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_73b71a7a_704d_4d10_8f8e_90c724c59f4c"
+    },
+    "OWLClass_3b74ecb3_8ba3_43c4_8eac_1562459672f4" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_3b74ecb3_8ba3_43c4_8eac_1562459672f4"
+    },
+    "OWLClass_82a17755_ebb0_4d31_8fdb_2eae360edb92" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_82a17755_ebb0_4d31_8fdb_2eae360edb92"
+    },
+    "OWLClass_2bd437ac_26c8_4d73_93b1_6afa5266a89a" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_2bd437ac_26c8_4d73_93b1_6afa5266a89a"
+    },
+    "OWLClass_a00f45fa_2b62_4b84_aebd_0853952931cc" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_a00f45fa_2b62_4b84_aebd_0853952931cc"
+    },
+    "OWLClass_9a4383e0_ecf3_4dc7_8350_6c678bbb80f2" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_9a4383e0_ecf3_4dc7_8350_6c678bbb80f2"
+    },
+    "OWLClass_c4e46d77_c609_457c_b15b_408812fd9bee" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_c4e46d77_c609_457c_b15b_408812fd9bee"
+    },
+    "OWLClass_fec0a714_1178_4979_ae7c_16d425acd7b9" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_fec0a714_1178_4979_ae7c_16d425acd7b9"
+    },
+    "OWLObjectProperty_a6c0dc9d_4ee5_4a37_abd7_b7874b10c9ee" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLObjectProperty_a6c0dc9d_4ee5_4a37_abd7_b7874b10c9ee",
+      "@type" : "@id"
+    },
+    "OWLClass_b6676a34_460a_42f9_bd97_216435fd798b" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_b6676a34_460a_42f9_bd97_216435fd798b"
+    },
+    "hasComponent" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#hasComponent",
+      "@type" : "@id"
+    },
+    "OWLClass_09b53151_f6fd_4c15_8176_d42fce986f46" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_09b53151_f6fd_4c15_8176_d42fce986f46"
+    },
+    "OWLClass_5caaab22_6e53_4307_b282_80b61932e260" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_5caaab22_6e53_4307_b282_80b61932e260"
+    },
+    "OWLClass_8942d6fb_86ad_4739_b2b8_4a5c23a03e00" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_8942d6fb_86ad_4739_b2b8_4a5c23a03e00"
+    },
+    "Appropriate_Structure" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Appropriate_Structure"
+    },
+    "OWLClass_b5e83b80_9239_4aaf_891c_cc6463cdee27" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_b5e83b80_9239_4aaf_891c_cc6463cdee27"
+    },
+    "OWLClass_26a1eeb9_7ce4_4293_91dd_d779d659fa47" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_26a1eeb9_7ce4_4293_91dd_d779d659fa47"
+    },
+    "OWLClass_bf3becde_a6ce_4d65_8e79_dc02acbfd141" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_bf3becde_a6ce_4d65_8e79_dc02acbfd141"
+    },
+    "OWLClass_bc94bac0_5a9a_473b_b603_ca008219822c" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_bc94bac0_5a9a_473b_b603_ca008219822c"
+    },
+    "OWLClass_44bda64b_c0c5_4458_9afd_3261e71be12a" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_44bda64b_c0c5_4458_9afd_3261e71be12a"
+    },
+    "Score_All_SAX" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Score_All_SAX"
+    },
+    "Generate_Random_Subseries_Difference_Locations" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Generate_Random_Subseries_Difference_Locations"
+    },
+    "OWLClass_42ba6fc9_e2e0_4141_a235_00bb89df7286" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_42ba6fc9_e2e0_4141_a235_00bb89df7286"
+    },
+    "OWLClass_f0b26b95_5749_495d_a6b5_cb4f96187001" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_f0b26b95_5749_495d_a6b5_cb4f96187001"
+    },
+    "OWLClass_92e31ede_852b_450f_8961_21869e090cb0" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_92e31ede_852b_450f_8961_21869e090cb0"
+    },
+    "Extract_Top_k_Shapelets" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Extract_Top_k_Shapelets"
+    },
+    "OWLClass_039df53b_0a6d_456e_8c7d_38be12bd8b44" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_039df53b_0a6d_456e_8c7d_38be12bd8b44"
+    },
+    "OWLClass_0cc6d7d6_6d08_4441_a629_6d903498a4b2" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_0cc6d7d6_6d08_4441_a629_6d903498a4b2"
+    },
+    "OWLClass_7e738ba4_f61c_4fec_829b_debc0d087b19" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_7e738ba4_f61c_4fec_829b_debc0d087b19"
+    },
+    "OWLClass_f9ea56bd_2659_4e6f_bc1d_293aaa848262" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_f9ea56bd_2659_4e6f_bc1d_293aaa848262"
+    },
+    "OWLObjectProperty_f70a04a8_6113_4d16_853b_63eeb04c18e1" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLObjectProperty_f70a04a8_6113_4d16_853b_63eeb04c18e1",
+      "@type" : "@id"
+    },
+    "OWLClass_ebb33f0b_0898_4515_8cca_e8201bc9280d" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_ebb33f0b_0898_4515_8cca_e8201bc9280d"
+    },
+    "OWLClass_fb9d3ff3_9ada_4c33_894f_2fc71c4ba073" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_fb9d3ff3_9ada_4c33_894f_2fc71c4ba073"
+    },
+    "OWLClass_c6ccc4ca_a7a0_4217_8844_2c448b9af13d" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_c6ccc4ca_a7a0_4217_8844_2c448b9af13d"
+    },
+    "OWLClass_40280f52_ac3e_41dc_8744_9523df9573d7" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_40280f52_ac3e_41dc_8744_9523df9573d7"
+    },
+    "C4.5" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#C4.5"
+    },
+    "OWLClass_75033fdb_20da_4d0e_b472_cf9e29ba156d" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_75033fdb_20da_4d0e_b472_cf9e29ba156d"
+    },
+    "OWLObjectProperty_bd6c5369_ca97_418e_9442_01bbb4735cec" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLObjectProperty_bd6c5369_ca97_418e_9442_01bbb4735cec",
+      "@type" : "@id"
+    },
+    "OWLClass_34189021_4eec_4160_b50d_02cf143e1757" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_34189021_4eec_4160_b50d_02cf143e1757"
+    },
+    "Find_Distance_to_All_Series" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Find_Distance_to_All_Series"
+    },
+    "OWLClass_c078bee1_8a55_4858_bbca_d3e9182844f0" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_c078bee1_8a55_4858_bbca_d3e9182844f0"
+    },
+    "OWLClass_b3e19a6f_7e0f_4591_93f9_dcf3588d4d6e" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_b3e19a6f_7e0f_4591_93f9_dcf3588d4d6e"
+    },
+    "OWLClass_9a011f4f_c05b_4276_a900_b2875204893d" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_9a011f4f_c05b_4276_a900_b2875204893d"
+    },
+    "OWLClass_ddf8306d_1ff8_488e_807f_83be2c94fe33" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_ddf8306d_1ff8_488e_807f_83be2c94fe33"
+    },
+    "OWLClass_41a99b45_a0f4_4a26_9e74_3a9966fa1ed2" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_41a99b45_a0f4_4a26_9e74_3a9966fa1ed2"
+    },
+    "OWLClass_9bd3b16c_d7bc_40b7_b58d_83b7e604c3ef" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_9bd3b16c_d7bc_40b7_b58d_83b7e604c3ef"
+    },
+    "OWLClass_53ed885a_69a1_4607_81fb_4a8722cd4477" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_53ed885a_69a1_4607_81fb_4a8722cd4477"
+    },
+    "OWLClass_d02392e7_960c_4b2d_872c_9eab643d96a9" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_d02392e7_960c_4b2d_872c_9eab643d96a9"
+    },
+    "OWLClass_44564fd1_997a_4e32_b83a_a991d42495eb" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_44564fd1_997a_4e32_b83a_a991d42495eb"
+    },
+    "OWLClass_e4004591_bc6b_4e36_a51e_dc817fcf8253" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_e4004591_bc6b_4e36_a51e_dc817fcf8253"
+    },
+    "OWLClass_b7ff3f44_eefb_4b40_8792_8a685ad699d9" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_b7ff3f44_eefb_4b40_8792_8a685ad699d9"
+    },
+    "OWLClass_7cad0600_1ffb_4837_936e_92deb24775bf" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_7cad0600_1ffb_4837_936e_92deb24775bf"
+    },
+    "OWLClass_27aad928_4b11_429f_ac4f_a27eb2760a0d" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_27aad928_4b11_429f_ac4f_a27eb2760a0d"
+    },
+    "Rule-Learner" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Rule-Learner"
+    },
+    "Preprocessing" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Preprocessing"
+    },
+    "Mathematics_Operation" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#Mathematics_Operation"
+    },
+    "OWLClass_73199aeb_06b9_47d6_8438_eb926892dd80" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_73199aeb_06b9_47d6_8438_eb926892dd80"
+    },
+    "OWLClass_b0916666_4aad_4490_80cc_b4c79b630856" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_b0916666_4aad_4490_80cc_b4c79b630856"
+    },
+    "OWLClass_17a51ff1_d150_46a1_b381_5c055413f355" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_17a51ff1_d150_46a1_b381_5c055413f355"
+    },
+    "OWLClass_ecb1eff7_f15b_4af3_b0f9_7c97823b3e03" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_ecb1eff7_f15b_4af3_b0f9_7c97823b3e03"
+    },
+    "OWLClass_95fb634b_98e7_4ebe_b1e6_179af67fb9cf" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_95fb634b_98e7_4ebe_b1e6_179af67fb9cf"
+    },
+    "OWLClass_9ddc6d3e_bc5a_4d51_b391_7fd9d7498b18" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_9ddc6d3e_bc5a_4d51_b391_7fd9d7498b18"
+    },
+    "OWLClass_25c4fe96_4bbf_4ff1_9f09_78c5a750ec60" : {
+      "@id" : "http://www.semanticweb.org/administrator/ontologies/2018/3/untitled-ontology-45#OWLClass_25c4fe96_4bbf_4ff1_9f09_78c5a750ec60"
+    }
+  }
+}

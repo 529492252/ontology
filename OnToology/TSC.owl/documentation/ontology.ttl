@@ -1,0 +1,2617 @@
+@prefix : <http://www.semanticweb.org/mantx/ontologies/TSC#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/mantx/ontologies/TSC> .
+
+<http://www.semanticweb.org/mantx/ontologies/TSC> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#availableTo
+:availableTo rdf:type owl:ObjectProperty ,
+                      owl:TransitiveProperty ;
+             rdfs:domain :Algorithm ,
+                         :Mathematics ;
+             rdfs:range :Dataset .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#employs
+:employs rdf:type owl:ObjectProperty ;
+         rdfs:domain :Algorithm ;
+         rdfs:range :Algorithm ,
+                    :Mathematics .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#hasFunction
+:hasFunction rdf:type owl:ObjectProperty ;
+             rdfs:domain :Algorithm ;
+             rdfs:range :Mathematics .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#hasMeasure
+:hasMeasure rdf:type owl:ObjectProperty ;
+            rdfs:domain :Algorithm ;
+            rdfs:range :Mathematics .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#hasModel
+:hasModel rdf:type owl:ObjectProperty ;
+          rdfs:domain :Algorithm ;
+          rdfs:range :Mathematics .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#hasTechnique
+:hasTechnique rdf:type owl:ObjectProperty ;
+              rdfs:domain :Algorithm ;
+              rdfs:range :Algorithm ,
+                         :Mathematics .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#suitableFor
+:suitableFor rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :availableTo ;
+             rdf:type owl:TransitiveProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#hasAttribute
+:hasAttribute rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#hasClass
+:hasClass rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#hasClassSize
+:hasClassSize rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf :hasSize .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#hasLabeledValues
+:hasLabeledValues rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#hasLengthSize
+:hasLengthSize rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf :hasSize .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#hasSize
+:hasSize rdf:type owl:DatatypeProperty ;
+         rdfs:domain :TSDatasetByLength ,
+                     :TSDatasetByNoOfClass ,
+                     :TSDatasetByTestSize ,
+                     :TSDatasetByTrainSize ;
+         rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#hasTest
+:hasTest rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#hasTestSize
+:hasTestSize rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf :hasSize .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#hasTrain
+:hasTrain rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#hasTrainSize
+:hasTrainSize rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf :hasSize .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#ACF
+:ACF rdf:type owl:Class ;
+     owl:equivalentClass [ owl:intersectionOf ( :AlgorithmSuitableForDeviceTSDataset
+                                                :ConcreteTSCAlgorithm
+                                              ) ;
+                           rdf:type owl:Class
+                         ] ;
+     rdfs:subClassOf :ConcreteTSCAlgorithm .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#ASSISTANT
+:ASSISTANT rdf:type owl:Class ;
+           rdfs:subClassOf :Decisiontrees .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#AdaBoost
+:AdaBoost rdf:type owl:Class ;
+          rdfs:subClassOf :Ensemble .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#Algorithm
+:Algorithm rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#AlgorithmBasedOnCombinations
+:AlgorithmBasedOnCombinations rdf:type owl:Class ;
+                              rdfs:subClassOf :AlgorithmByTechnique .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#AlgorithmBasedOnDictionary
+:AlgorithmBasedOnDictionary rdf:type owl:Class ;
+                            rdfs:subClassOf :AlgorithmByTechnique .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#AlgorithmBasedOnIntervals
+:AlgorithmBasedOnIntervals rdf:type owl:Class ;
+                           rdfs:subClassOf :AlgorithmByTechnique .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#AlgorithmBasedOnModel
+:AlgorithmBasedOnModel rdf:type owl:Class ;
+                       rdfs:subClassOf :AlgorithmByTechnique .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#AlgorithmBasedOnShapelets
+:AlgorithmBasedOnShapelets rdf:type owl:Class ;
+                           rdfs:subClassOf :AlgorithmByTechnique .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#AlgorithmBasedOnWholeSeries
+:AlgorithmBasedOnWholeSeries rdf:type owl:Class ;
+                             rdfs:subClassOf :AlgorithmByTechnique .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#AlgorithmByArea
+:AlgorithmByArea rdf:type owl:Class ;
+                 owl:equivalentClass [ owl:intersectionOf ( :AlgorithmByPerformence
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty :suitableFor ;
+                                                              owl:someValuesFrom :TSDatasetByArea
+                                                            ]
+                                                          ) ;
+                                       rdf:type owl:Class
+                                     ] ;
+                 rdfs:subClassOf :AlgorithmByPerformence .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#AlgorithmByFunction
+:AlgorithmByFunction rdf:type owl:Class ;
+                     owl:equivalentClass [ owl:intersectionOf ( :Algorithm
+                                                                [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty :hasFunction ;
+                                                                  owl:someValuesFrom :Mathematics
+                                                                ]
+                                                              ) ;
+                                           rdf:type owl:Class
+                                         ] ;
+                     rdfs:subClassOf :Algorithm .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#AlgorithmByLength
+:AlgorithmByLength rdf:type owl:Class ;
+                   owl:equivalentClass [ owl:intersectionOf ( :AlgorithmByPerformence
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty :suitableFor ;
+                                                                owl:someValuesFrom :TSDatasetByLength
+                                                              ]
+                                                            ) ;
+                                         rdf:type owl:Class
+                                       ] ;
+                   rdfs:subClassOf :AlgorithmByPerformence .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#AlgorithmByModel
+:AlgorithmByModel rdf:type owl:Class ;
+                  rdfs:subClassOf :Algorithm .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#AlgorithmByNoOfClass
+:AlgorithmByNoOfClass rdf:type owl:Class ;
+                      owl:equivalentClass [ owl:intersectionOf ( :AlgorithmByPerformence
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :suitableFor ;
+                                                                   owl:someValuesFrom :TSDatasetByNoOfClass
+                                                                 ]
+                                                               ) ;
+                                            rdf:type owl:Class
+                                          ] ;
+                      rdfs:subClassOf :AlgorithmByPerformence .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#AlgorithmByPerformence
+:AlgorithmByPerformence rdf:type owl:Class ;
+                        owl:equivalentClass [ owl:intersectionOf ( :Algorithm
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty :suitableFor ;
+                                                                     owl:someValuesFrom :Dataset
+                                                                   ]
+                                                                 ) ;
+                                              rdf:type owl:Class
+                                            ] ;
+                        rdfs:subClassOf :Algorithm .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#AlgorithmByTechnique
+:AlgorithmByTechnique rdf:type owl:Class ;
+                      rdfs:subClassOf :Algorithm .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#AlgorithmByTestSize
+:AlgorithmByTestSize rdf:type owl:Class ;
+                     owl:equivalentClass [ owl:intersectionOf ( :AlgorithmByPerformence
+                                                                [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty :suitableFor ;
+                                                                  owl:someValuesFrom :TSDatasetByTestSize
+                                                                ]
+                                                              ) ;
+                                           rdf:type owl:Class
+                                         ] ;
+                     rdfs:subClassOf :AlgorithmByPerformence .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#AlgorithmByTrainSize
+:AlgorithmByTrainSize rdf:type owl:Class ;
+                      owl:equivalentClass [ owl:intersectionOf ( :AlgorithmByPerformence
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :suitableFor ;
+                                                                   owl:someValuesFrom :TSDatasetByTrainSize
+                                                                 ]
+                                                               ) ;
+                                            rdf:type owl:Class
+                                          ] ;
+                      rdfs:subClassOf :AlgorithmByPerformence .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#AlgorithmSuitableForDeviceTSDataset
+:AlgorithmSuitableForDeviceTSDataset rdf:type owl:Class ;
+                                     owl:equivalentClass [ owl:intersectionOf ( :AlgorithmByArea
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty :suitableFor ;
+                                                                                  owl:someValuesFrom :DeviceTSDataset
+                                                                                ]
+                                                                              ) ;
+                                                           rdf:type owl:Class
+                                                         ] ;
+                                     rdfs:subClassOf :AlgorithmByArea .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#AlgorithmSuitableForECGTSDataset
+:AlgorithmSuitableForECGTSDataset rdf:type owl:Class ;
+                                  owl:equivalentClass [ owl:intersectionOf ( :AlgorithmByArea
+                                                                             [ rdf:type owl:Restriction ;
+                                                                               owl:onProperty :suitableFor ;
+                                                                               owl:someValuesFrom :ECGTSDataset
+                                                                             ]
+                                                                           ) ;
+                                                        rdf:type owl:Class
+                                                      ] ;
+                                  rdfs:subClassOf :AlgorithmByArea .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#AlgorithmSuitableForFewClassTSDataset
+:AlgorithmSuitableForFewClassTSDataset rdf:type owl:Class ;
+                                       owl:equivalentClass [ owl:intersectionOf ( :AlgorithmByNoOfClass
+                                                                                  [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty :suitableFor ;
+                                                                                    owl:someValuesFrom :FewClassTSDataset
+                                                                                  ]
+                                                                                ) ;
+                                                             rdf:type owl:Class
+                                                           ] ;
+                                       rdfs:subClassOf :AlgorithmByNoOfClass .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#AlgorithmSuitableForImageTSDataset
+:AlgorithmSuitableForImageTSDataset rdf:type owl:Class ;
+                                    owl:equivalentClass [ owl:intersectionOf ( :AlgorithmByArea
+                                                                               [ rdf:type owl:Restriction ;
+                                                                                 owl:onProperty :suitableFor ;
+                                                                                 owl:someValuesFrom :ImageTSDataset
+                                                                               ]
+                                                                             ) ;
+                                                          rdf:type owl:Class
+                                                        ] ;
+                                    rdfs:subClassOf :AlgorithmByArea .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#AlgorithmSuitableForLargeTestTSDataset
+:AlgorithmSuitableForLargeTestTSDataset rdf:type owl:Class ;
+                                        owl:equivalentClass [ owl:intersectionOf ( :AlgorithmByTestSize
+                                                                                   [ rdf:type owl:Restriction ;
+                                                                                     owl:onProperty :suitableFor ;
+                                                                                     owl:someValuesFrom :LargeTestTSDataset
+                                                                                   ]
+                                                                                 ) ;
+                                                              rdf:type owl:Class
+                                                            ] ;
+                                        rdfs:subClassOf :AlgorithmByTestSize .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#AlgorithmSuitableForLargeTrainTSDataset
+:AlgorithmSuitableForLargeTrainTSDataset rdf:type owl:Class ;
+                                         owl:equivalentClass [ owl:intersectionOf ( :AlgorithmByTrainSize
+                                                                                    [ rdf:type owl:Restriction ;
+                                                                                      owl:onProperty :suitableFor ;
+                                                                                      owl:someValuesFrom :LargeTrainTSDataset
+                                                                                    ]
+                                                                                  ) ;
+                                                               rdf:type owl:Class
+                                                             ] ;
+                                         rdfs:subClassOf :AlgorithmByTrainSize .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#AlgorithmSuitableForLongTSDataset
+:AlgorithmSuitableForLongTSDataset rdf:type owl:Class ;
+                                   owl:equivalentClass [ owl:intersectionOf ( :AlgorithmByLength
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty :suitableFor ;
+                                                                                owl:someValuesFrom :LongTSDataset
+                                                                              ]
+                                                                            ) ;
+                                                         rdf:type owl:Class
+                                                       ] ;
+                                   rdfs:subClassOf :AlgorithmByLength .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#AlgorithmSuitableForManyClassTSDataset
+:AlgorithmSuitableForManyClassTSDataset rdf:type owl:Class ;
+                                        owl:equivalentClass [ owl:intersectionOf ( :AlgorithmByNoOfClass
+                                                                                   [ rdf:type owl:Restriction ;
+                                                                                     owl:onProperty :suitableFor ;
+                                                                                     owl:someValuesFrom :ManyClassTSDataset
+                                                                                   ]
+                                                                                 ) ;
+                                                              rdf:type owl:Class
+                                                            ] ;
+                                        rdfs:subClassOf :AlgorithmByNoOfClass .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#AlgorithmSuitableForMediumClassTSDataset
+:AlgorithmSuitableForMediumClassTSDataset rdf:type owl:Class ;
+                                          owl:equivalentClass [ owl:intersectionOf ( :AlgorithmByNoOfClass
+                                                                                     [ rdf:type owl:Restriction ;
+                                                                                       owl:onProperty :suitableFor ;
+                                                                                       owl:someValuesFrom :MediumClassTSDataset
+                                                                                     ]
+                                                                                   ) ;
+                                                                rdf:type owl:Class
+                                                              ] ;
+                                          rdfs:subClassOf :AlgorithmByNoOfClass .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#AlgorithmSuitableForMediumTSDataset
+:AlgorithmSuitableForMediumTSDataset rdf:type owl:Class ;
+                                     owl:equivalentClass [ owl:intersectionOf ( :AlgorithmByLength
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty :suitableFor ;
+                                                                                  owl:someValuesFrom :MediumTSDataset
+                                                                                ]
+                                                                              ) ;
+                                                           rdf:type owl:Class
+                                                         ] ;
+                                     rdfs:subClassOf :AlgorithmByLength .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#AlgorithmSuitableForMediumTestTSDataset
+:AlgorithmSuitableForMediumTestTSDataset rdf:type owl:Class ;
+                                         owl:equivalentClass [ owl:intersectionOf ( :AlgorithmByTestSize
+                                                                                    [ rdf:type owl:Restriction ;
+                                                                                      owl:onProperty :suitableFor ;
+                                                                                      owl:someValuesFrom :MediumTestTSDataset
+                                                                                    ]
+                                                                                  ) ;
+                                                               rdf:type owl:Class
+                                                             ] ;
+                                         rdfs:subClassOf :AlgorithmByTestSize .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#AlgorithmSuitableForMediumTrainTSDataset
+:AlgorithmSuitableForMediumTrainTSDataset rdf:type owl:Class ;
+                                          owl:equivalentClass [ owl:intersectionOf ( :AlgorithmByTrainSize
+                                                                                     [ rdf:type owl:Restriction ;
+                                                                                       owl:onProperty :suitableFor ;
+                                                                                       owl:someValuesFrom :MediumTrainTSDataset
+                                                                                     ]
+                                                                                   ) ;
+                                                                rdf:type owl:Class
+                                                              ] ;
+                                          rdfs:subClassOf :AlgorithmByTrainSize .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#AlgorithmSuitableForMotionTSDataset
+:AlgorithmSuitableForMotionTSDataset rdf:type owl:Class ;
+                                     owl:equivalentClass [ owl:intersectionOf ( :AlgorithmByArea
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty :suitableFor ;
+                                                                                  owl:someValuesFrom :MotionTSDataset
+                                                                                ]
+                                                                              ) ;
+                                                           rdf:type owl:Class
+                                                         ] ;
+                                     rdfs:subClassOf :AlgorithmByArea .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#AlgorithmSuitableForSensorTSDataset
+:AlgorithmSuitableForSensorTSDataset rdf:type owl:Class ;
+                                     owl:equivalentClass [ owl:intersectionOf ( :AlgorithmByArea
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty :suitableFor ;
+                                                                                  owl:someValuesFrom :SensorTSDataset
+                                                                                ]
+                                                                              ) ;
+                                                           rdf:type owl:Class
+                                                         ] ;
+                                     rdfs:subClassOf :AlgorithmByArea .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#AlgorithmSuitableForShortTSDataset
+:AlgorithmSuitableForShortTSDataset rdf:type owl:Class ;
+                                    owl:equivalentClass [ owl:intersectionOf ( :AlgorithmByLength
+                                                                               [ rdf:type owl:Restriction ;
+                                                                                 owl:onProperty :suitableFor ;
+                                                                                 owl:someValuesFrom :ShortTSDataset
+                                                                               ]
+                                                                             ) ;
+                                                          rdf:type owl:Class
+                                                        ] ;
+                                    rdfs:subClassOf :AlgorithmByLength .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#AlgorithmSuitableForSimulatedTSDataset
+:AlgorithmSuitableForSimulatedTSDataset rdf:type owl:Class ;
+                                        owl:equivalentClass [ owl:intersectionOf ( :AlgorithmByArea
+                                                                                   [ rdf:type owl:Restriction ;
+                                                                                     owl:onProperty :suitableFor ;
+                                                                                     owl:someValuesFrom :SimulatedTSDataset
+                                                                                   ]
+                                                                                 ) ;
+                                                              rdf:type owl:Class
+                                                            ] ;
+                                        rdfs:subClassOf :AlgorithmByArea .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#AlgorithmSuitableForSmallTestTSDataset
+:AlgorithmSuitableForSmallTestTSDataset rdf:type owl:Class ;
+                                        owl:equivalentClass [ owl:intersectionOf ( :AlgorithmByTestSize
+                                                                                   [ rdf:type owl:Restriction ;
+                                                                                     owl:onProperty :suitableFor ;
+                                                                                     owl:someValuesFrom :SmallTestTSDataset
+                                                                                   ]
+                                                                                 ) ;
+                                                              rdf:type owl:Class
+                                                            ] ;
+                                        rdfs:subClassOf :AlgorithmByTestSize .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#AlgorithmSuitableForSmallTrainTSDataset
+:AlgorithmSuitableForSmallTrainTSDataset rdf:type owl:Class ;
+                                         owl:equivalentClass [ owl:intersectionOf ( :AlgorithmByTrainSize
+                                                                                    [ rdf:type owl:Restriction ;
+                                                                                      owl:onProperty :suitableFor ;
+                                                                                      owl:someValuesFrom :SmallTrainTSDataset
+                                                                                    ]
+                                                                                  ) ;
+                                                               rdf:type owl:Class
+                                                             ] ;
+                                         rdfs:subClassOf :AlgorithmByTrainSize .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#AlgorithmSuitableForSpectroTSDataset
+:AlgorithmSuitableForSpectroTSDataset rdf:type owl:Class ;
+                                      owl:equivalentClass [ owl:intersectionOf ( :AlgorithmByArea
+                                                                                 [ rdf:type owl:Restriction ;
+                                                                                   owl:onProperty :suitableFor ;
+                                                                                   owl:someValuesFrom :SpectroTSDataset
+                                                                                 ]
+                                                                               ) ;
+                                                            rdf:type owl:Class
+                                                          ] ;
+                                      rdfs:subClassOf :AlgorithmByArea .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#AlgorithmWithACF
+:AlgorithmWithACF rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( :AlgorithmByFunction
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty :hasFunction ;
+                                                               owl:someValuesFrom :AutocorrelationFunction
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
+                  rdfs:subClassOf :AlgorithmByFunction .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#AlgorithmWithDerivative
+:AlgorithmWithDerivative rdf:type owl:Class ;
+                         owl:equivalentClass [ owl:intersectionOf ( :AlgorithmByFunction
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty :hasFunction ;
+                                                                      owl:someValuesFrom :Derivative
+                                                                    ]
+                                                                  ) ;
+                                               rdf:type owl:Class
+                                             ] ;
+                         rdfs:subClassOf :AlgorithmByFunction .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#AlgorithmWithR1
+:AlgorithmWithR1 rdf:type owl:Class ;
+                 owl:equivalentClass [ owl:intersectionOf ( :AlgorithmWithWarpingWindow
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty :hasFunction ;
+                                                              owl:someValuesFrom :FullWarpingWindow
+                                                            ]
+                                                          ) ;
+                                       rdf:type owl:Class
+                                     ] ;
+                 rdfs:subClassOf :AlgorithmWithWarpingWindow ;
+                 owl:disjointWith :AlgorithmWithRn .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#AlgorithmWithRn
+:AlgorithmWithRn rdf:type owl:Class ;
+                 owl:equivalentClass [ owl:intersectionOf ( :AlgorithmWithWarpingWindow
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty :hasFunction ;
+                                                              owl:someValuesFrom :WarpingWindowSetThroughCrossValidation
+                                                            ]
+                                                          ) ;
+                                       rdf:type owl:Class
+                                     ] ;
+                 rdfs:subClassOf :AlgorithmWithWarpingWindow .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#AlgorithmWithWarpingWindow
+:AlgorithmWithWarpingWindow rdf:type owl:Class ;
+                            owl:equivalentClass [ owl:intersectionOf ( :AlgorithmByFunction
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty :hasFunction ;
+                                                                         owl:someValuesFrom :WarpingWindow
+                                                                       ]
+                                                                     ) ;
+                                                  rdf:type owl:Class
+                                                ] ;
+                            rdfs:subClassOf :AlgorithmByFunction .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#Apriorialgorithm
+:Apriorialgorithm rdf:type owl:Class ;
+                  rdfs:subClassOf :AssociationRuleLearning ;
+                  owl:disjointWith :Eclatalgorithm .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#Artificial_Neural_Network
+:Artificial_Neural_Network rdf:type owl:Class ;
+                           rdfs:subClassOf :AlgorithmByModel .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#AssociationRuleLearning
+:AssociationRuleLearning rdf:type owl:Class ;
+                         rdfs:subClassOf :AlgorithmByModel .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#AutocorrelationFunction
+:AutocorrelationFunction rdf:type owl:Class ;
+                         rdfs:subClassOf :Mathematics .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#AveragedOne-DependenceEstimators
+:AveragedOne-DependenceEstimators rdf:type owl:Class ;
+                                  rdfs:subClassOf :Bayesian .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#BN
+:BN rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :ConcreteTSCAlgorithm
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :employs ;
+                                                 owl:someValuesFrom :BayesianNetwork
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :ConcreteTSCAlgorithm .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#BN_AugmentedNaiveBayes
+:BN_AugmentedNaiveBayes rdf:type owl:Class ;
+                        rdfs:subClassOf :Bayesian .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#BOSS
+:BOSS rdf:type owl:Class ;
+      owl:equivalentClass [ owl:intersectionOf ( :AlgorithmBasedOnCombinations
+                                                 :AlgorithmBasedOnDictionary
+                                                 :AlgorithmSuitableForDeviceTSDataset
+                                                 :AlgorithmSuitableForECGTSDataset
+                                                 :AlgorithmSuitableForFewClassTSDataset
+                                                 :AlgorithmSuitableForImageTSDataset
+                                                 :AlgorithmSuitableForLargeTestTSDataset
+                                                 :AlgorithmSuitableForLargeTrainTSDataset
+                                                 :AlgorithmSuitableForLongTSDataset
+                                                 :AlgorithmSuitableForManyClassTSDataset
+                                                 :AlgorithmSuitableForMediumTSDataset
+                                                 :AlgorithmSuitableForMediumTestTSDataset
+                                                 :AlgorithmSuitableForMediumTrainTSDataset
+                                                 :AlgorithmSuitableForMotionTSDataset
+                                                 :AlgorithmSuitableForSensorTSDataset
+                                                 :AlgorithmSuitableForShortTSDataset
+                                                 :AlgorithmSuitableForSimulatedTSDataset
+                                                 :AlgorithmSuitableForSmallTestTSDataset
+                                                 :AlgorithmSuitableForSmallTrainTSDataset
+                                                 :AlgorithmSuitableForSpectroTSDataset
+                                                 :AlgorithmWithACF
+                                                 :ConcreteTSCAlgorithm
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty :employs ;
+                                                   owl:someValuesFrom <http://www.semanticweb.org/mantx/ontologies/TSC#1NearestNeighbor>
+                                                 ]
+                                               ) ;
+                            rdf:type owl:Class
+                          ] ;
+      rdfs:subClassOf :ConcreteTSCAlgorithm .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#Back-Propagation
+:Back-Propagation rdf:type owl:Class ;
+                  rdfs:subClassOf :Artificial_Neural_Network .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#Bayesian
+:Bayesian rdf:type owl:Class ;
+          rdfs:subClassOf :AlgorithmByModel .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#BayesianBeliefNetwork
+:BayesianBeliefNetwork rdf:type owl:Class ;
+                       rdfs:subClassOf :Bayesian .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#BayesianNetwork
+:BayesianNetwork rdf:type owl:Class ;
+                 rdfs:subClassOf :Bayesian .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#BayesianSVM
+:BayesianSVM rdf:type owl:Class ;
+             rdfs:subClassOf :SupportVectorMachine .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#BoP
+:BoP rdf:type owl:Class ;
+     owl:equivalentClass [ owl:intersectionOf ( :AlgorithmBasedOnDictionary
+                                                :ConcreteTSCAlgorithm
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :employs ;
+                                                  owl:someValuesFrom <http://www.semanticweb.org/mantx/ontologies/TSC#1NearestNeighbor>
+                                                ]
+                                              ) ;
+                           rdf:type owl:Class
+                         ] ;
+     rdfs:subClassOf :ConcreteTSCAlgorithm .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#Boosting
+:Boosting rdf:type owl:Class ;
+          rdfs:subClassOf :Ensemble .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#BootstrappedAggregation
+:BootstrappedAggregation rdf:type owl:Class ;
+                         rdfs:subClassOf :Ensemble .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#C4.5
+:C4.5 rdf:type owl:Class ;
+      owl:equivalentClass [ owl:intersectionOf ( :ConcreteTSCAlgorithm
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty :employs ;
+                                                   owl:someValuesFrom :C4.5
+                                                 ]
+                                               ) ;
+                            rdf:type owl:Class
+                          ] ;
+      rdfs:subClassOf :ConcreteTSCAlgorithm ,
+                      :Decisiontrees .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#C5.0
+:C5.0 rdf:type owl:Class ;
+      rdfs:subClassOf :Decisiontrees .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#CID_DTW
+:CID_DTW rdf:type owl:Class ;
+         owl:equivalentClass [ owl:intersectionOf ( :AlgorithmBasedOnWholeSeries
+                                                    :AlgorithmSuitableForLongTSDataset
+                                                    :AlgorithmSuitableForMediumClassTSDataset
+                                                    :AlgorithmSuitableForMediumTestTSDataset
+                                                    :AlgorithmSuitableForSmallTrainTSDataset
+                                                    :ConcreteTSCAlgorithm
+                                                    [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty :employs ;
+                                                                             owl:someValuesFrom <http://www.semanticweb.org/mantx/ontologies/TSC#1NearestNeighbor>
+                                                                           ]
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty :hasMeasure ;
+                                                                             owl:someValuesFrom :Complexity-InvariantDistance
+                                                                           ]
+                                                                         ) ;
+                                                      rdf:type owl:Class
+                                                    ]
+                                                  ) ;
+                               rdf:type owl:Class
+                             ] ;
+         rdfs:subClassOf :ConcreteTSCAlgorithm .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#COTE
+:COTE rdf:type owl:Class ;
+      owl:equivalentClass [ owl:intersectionOf ( :AlgorithmBasedOnCombinations
+                                                 :AlgorithmBasedOnShapelets
+                                                 :AlgorithmSuitableForDeviceTSDataset
+                                                 :AlgorithmSuitableForECGTSDataset
+                                                 :AlgorithmSuitableForFewClassTSDataset
+                                                 :AlgorithmSuitableForImageTSDataset
+                                                 :AlgorithmSuitableForLargeTestTSDataset
+                                                 :AlgorithmSuitableForLargeTrainTSDataset
+                                                 :AlgorithmSuitableForLongTSDataset
+                                                 :AlgorithmSuitableForManyClassTSDataset
+                                                 :AlgorithmSuitableForMediumClassTSDataset
+                                                 :AlgorithmSuitableForMediumTSDataset
+                                                 :AlgorithmSuitableForMediumTestTSDataset
+                                                 :AlgorithmSuitableForMediumTrainTSDataset
+                                                 :AlgorithmSuitableForMotionTSDataset
+                                                 :AlgorithmSuitableForSensorTSDataset
+                                                 :AlgorithmSuitableForShortTSDataset
+                                                 :AlgorithmSuitableForSimulatedTSDataset
+                                                 :AlgorithmSuitableForSmallTestTSDataset
+                                                 :AlgorithmSuitableForSmallTrainTSDataset
+                                                 :AlgorithmWithACF
+                                                 :AlgorithmWithDerivative
+                                                 :ConcreteTSCAlgorithm
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty :employs ;
+                                                   owl:someValuesFrom <http://www.semanticweb.org/mantx/ontologies/TSC#1NearestNeighbor>
+                                                 ]
+                                               ) ;
+                            rdf:type owl:Class
+                          ] ;
+      rdfs:subClassOf :ConcreteTSCAlgorithm .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#ChebyshevDistance
+:ChebyshevDistance rdf:type owl:Class ;
+                   rdfs:subClassOf :MinkowskiDistance .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#Chi-squaredAutomaticInteractionDetection
+:Chi-squaredAutomaticInteractionDetection rdf:type owl:Class ;
+                                          rdfs:subClassOf :Decisiontrees .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#ClassificationAndRegressionTree
+:ClassificationAndRegressionTree rdf:type owl:Class ;
+                                 rdfs:subClassOf :Decisiontrees .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#CleanMissingData
+:CleanMissingData rdf:type owl:Class ;
+                  rdfs:subClassOf :Preprocessing .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#ClipOutliers
+:ClipOutliers rdf:type owl:Class ;
+              rdfs:subClassOf :Preprocessing .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#Clustering
+:Clustering rdf:type owl:Class ;
+            rdfs:subClassOf :AlgorithmByModel .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#Complexity-InvariantDistance
+:Complexity-InvariantDistance rdf:type owl:Class ;
+                              owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :hasFunction ;
+                                                    owl:someValuesFrom :Derivative
+                                                  ] ;
+                              rdfs:subClassOf :DistanceFunction .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#ConcreteTSCAlgorithm
+:ConcreteTSCAlgorithm rdf:type owl:Class ;
+                      owl:equivalentClass :SolutionForTSC ,
+                                          [ owl:intersectionOf ( :Algorithm
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :availableTo ;
+                                                                   owl:someValuesFrom :TimeSeriesDataset
+                                                                 ]
+                                                               ) ;
+                                            rdf:type owl:Class
+                                          ] ;
+                      rdfs:subClassOf :Algorithm .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#ConditionalDecisionTrees
+:ConditionalDecisionTrees rdf:type owl:Class ;
+                          rdfs:subClassOf :Decisiontrees .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#ConvolutionalNeuralNetwork
+:ConvolutionalNeuralNetwork rdf:type owl:Class ;
+                            rdfs:subClassOf :DeepLearning .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#CosineSimilarity
+:CosineSimilarity rdf:type owl:Class ;
+                  rdfs:subClassOf :DistanceFunction .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#DDTW_R1_1NN
+:DDTW_R1_1NN rdf:type owl:Class ;
+             owl:equivalentClass [ owl:intersectionOf ( :AlgorithmBasedOnWholeSeries
+                                                        :ConcreteTSCAlgorithm
+                                                        [ owl:intersectionOf ( :AlgorithmWithR1
+                                                                               [ rdf:type owl:Restriction ;
+                                                                                 owl:onProperty :employs ;
+                                                                                 owl:someValuesFrom <http://www.semanticweb.org/mantx/ontologies/TSC#1NearestNeighbor>
+                                                                               ]
+                                                                               [ rdf:type owl:Restriction ;
+                                                                                 owl:onProperty :hasMeasure ;
+                                                                                 owl:someValuesFrom :DerivativeDynamicTimeWarping
+                                                                               ]
+                                                                             ) ;
+                                                          rdf:type owl:Class
+                                                        ]
+                                                      ) ;
+                                   rdf:type owl:Class
+                                 ] ;
+             rdfs:subClassOf :ConcreteTSCAlgorithm .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#DDTW_Rn_1NN
+:DDTW_Rn_1NN rdf:type owl:Class ;
+             owl:equivalentClass [ owl:intersectionOf ( :AlgorithmBasedOnWholeSeries
+                                                        :AlgorithmWithR1
+                                                        :ConcreteTSCAlgorithm
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty :employs ;
+                                                          owl:someValuesFrom <http://www.semanticweb.org/mantx/ontologies/TSC#1NearestNeighbor>
+                                                        ]
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty :hasMeasure ;
+                                                          owl:someValuesFrom :DerivativeDynamicTimeWarping
+                                                        ]
+                                                      ) ;
+                                   rdf:type owl:Class
+                                 ] ;
+             rdfs:subClassOf :ConcreteTSCAlgorithm .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#DD_DTW
+:DD_DTW rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :AlgorithmBasedOnWholeSeries
+                                                   :AlgorithmSuitableForLongTSDataset
+                                                   :AlgorithmSuitableForManyClassTSDataset
+                                                   :AlgorithmSuitableForMediumTSDataset
+                                                   :AlgorithmSuitableForMediumTestTSDataset
+                                                   :AlgorithmSuitableForMediumTrainTSDataset
+                                                   :ConcreteTSCAlgorithm
+                                                   [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                            owl:onProperty :employs ;
+                                                                            owl:someValuesFrom <http://www.semanticweb.org/mantx/ontologies/TSC#1NearestNeighbor>
+                                                                          ]
+                                                                          [ rdf:type owl:Restriction ;
+                                                                            owl:onProperty :hasMeasure ;
+                                                                            owl:someValuesFrom :DerivativeDynamicTimeWarping
+                                                                          ]
+                                                                        ) ;
+                                                     rdf:type owl:Class
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
+        rdfs:subClassOf :ConcreteTSCAlgorithm .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#DTD_C
+:DTD_C rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :AlgorithmBasedOnWholeSeries
+                                                  :AlgorithmSuitableForDeviceTSDataset
+                                                  :AlgorithmSuitableForLongTSDataset
+                                                  :AlgorithmSuitableForMediumTestTSDataset
+                                                  :AlgorithmSuitableForMediumTrainTSDataset
+                                                  :ConcreteTSCAlgorithm
+                                                  [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty :employs ;
+                                                                           owl:someValuesFrom <http://www.semanticweb.org/mantx/ontologies/TSC#1NearestNeighbor>
+                                                                         ]
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty :hasMeasure ;
+                                                                           owl:someValuesFrom :DerivativeTransformDistance
+                                                                         ]
+                                                                       ) ;
+                                                    rdf:type owl:Class
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
+       rdfs:subClassOf :ConcreteTSCAlgorithm .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#DTW_F
+:DTW_F rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :AlgorithmSuitableForDeviceTSDataset
+                                                  :AlgorithmSuitableForFewClassTSDataset
+                                                  :AlgorithmSuitableForImageTSDataset
+                                                  :AlgorithmSuitableForLargeTestTSDataset
+                                                  :AlgorithmSuitableForLargeTrainTSDataset
+                                                  :AlgorithmSuitableForLongTSDataset
+                                                  :AlgorithmSuitableForMediumClassTSDataset
+                                                  :AlgorithmSuitableForMediumTSDataset
+                                                  :AlgorithmSuitableForMediumTestTSDataset
+                                                  :AlgorithmSuitableForMediumTrainTSDataset
+                                                  :AlgorithmSuitableForMotionTSDataset
+                                                  :AlgorithmSuitableForSensorTSDataset
+                                                  :AlgorithmSuitableForShortTSDataset
+                                                  :AlgorithmSuitableForSimulatedTSDataset
+                                                  :AlgorithmSuitableForSmallTestTSDataset
+                                                  :AlgorithmSuitableForSmallTrainTSDataset
+                                                  :ConcreteTSCAlgorithm
+                                                  [ owl:intersectionOf ( :AlgorithmBasedOnCombinations
+                                                                         :AlgorithmBasedOnDictionary
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty :employs ;
+                                                                           owl:someValuesFrom <http://www.semanticweb.org/mantx/ontologies/TSC#1NearestNeighbor>
+                                                                         ]
+                                                                       ) ;
+                                                    rdf:type owl:Class
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
+       rdfs:subClassOf :ConcreteTSCAlgorithm .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#DTW_R1_1NN
+:DTW_R1_1NN rdf:type owl:Class ;
+            owl:equivalentClass [ owl:intersectionOf ( :AlgorithmBasedOnWholeSeries
+                                                       :AlgorithmWithR1
+                                                       :ConcreteTSCAlgorithm
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty :employs ;
+                                                         owl:someValuesFrom <http://www.semanticweb.org/mantx/ontologies/TSC#1NearestNeighbor>
+                                                       ]
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty :hasMeasure ;
+                                                         owl:someValuesFrom :DynamicTimeWarping
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
+                                ] ;
+            rdfs:subClassOf :ConcreteTSCAlgorithm .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#DTW_Rn_1NN
+:DTW_Rn_1NN rdf:type owl:Class ;
+            owl:equivalentClass [ owl:intersectionOf ( :AlgorithmBasedOnWholeSeries
+                                                       :AlgorithmSuitableForMediumClassTSDataset
+                                                       :AlgorithmWithRn
+                                                       :ConcreteTSCAlgorithm
+                                                       [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty :employs ;
+                                                                                owl:someValuesFrom <http://www.semanticweb.org/mantx/ontologies/TSC#1NearestNeighbor>
+                                                                              ]
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty :hasMeasure ;
+                                                                                owl:someValuesFrom :DynamicTimeWarping
+                                                                              ]
+                                                                            ) ;
+                                                         rdf:type owl:Class
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
+                                ] ;
+            rdfs:subClassOf :ConcreteTSCAlgorithm .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#Dataset
+:Dataset rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#DecisionStump
+:DecisionStump rdf:type owl:Class ;
+               rdfs:subClassOf :Decisiontrees .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#Decisiontrees
+:Decisiontrees rdf:type owl:Class ;
+               rdfs:subClassOf :AlgorithmByModel .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#DeepBeliefNetworks
+:DeepBeliefNetworks rdf:type owl:Class ;
+                    rdfs:subClassOf :DeepLearning .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#DeepBoltzmannMachine
+:DeepBoltzmannMachine rdf:type owl:Class ;
+                      rdfs:subClassOf :DeepLearning .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#DeepLearning
+:DeepLearning rdf:type owl:Class ;
+              rdfs:subClassOf :AlgorithmByModel .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#Derivative
+:Derivative rdf:type owl:Class ;
+            rdfs:subClassOf :Mathematics .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#DerivativeDynamicTimeWarping
+:DerivativeDynamicTimeWarping rdf:type owl:Class ;
+                              owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty :hasFunction ;
+                                                                           owl:someValuesFrom :Derivative
+                                                                         ]
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty :hasFunction ;
+                                                                           owl:someValuesFrom :DynamicTimeWarping
+                                                                         ]
+                                                                       ) ;
+                                                    rdf:type owl:Class
+                                                  ] ;
+                              rdfs:subClassOf :DistanceFunction .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#DerivativeTransformDistance
+:DerivativeTransformDistance rdf:type owl:Class ;
+                             owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                   owl:onProperty :hasFunction ;
+                                                   owl:someValuesFrom :Derivative
+                                                 ] ;
+                             rdfs:subClassOf :DistanceFunction .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#DeviceTSDataset
+:DeviceTSDataset rdf:type owl:Class ;
+                 rdfs:subClassOf :TSDatasetByArea .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#DimensionalityReduction
+:DimensionalityReduction rdf:type owl:Class ;
+                         rdfs:subClassOf :Preprocessing .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#DistanceFunction
+:DistanceFunction rdf:type owl:Class ;
+                  rdfs:subClassOf :Mathematics .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#DynamicTimeWarping
+:DynamicTimeWarping rdf:type owl:Class ;
+                    rdfs:subClassOf :DistanceFunction .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#ECGTSDataset
+:ECGTSDataset rdf:type owl:Class ;
+              rdfs:subClassOf :TSDatasetByArea .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#EE
+:EE rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :AlgorithmBasedOnCombinations
+                                               :AlgorithmBasedOnWholeSeries
+                                               :AlgorithmSuitableForDeviceTSDataset
+                                               :AlgorithmSuitableForECGTSDataset
+                                               :AlgorithmSuitableForFewClassTSDataset
+                                               :AlgorithmSuitableForImageTSDataset
+                                               :AlgorithmSuitableForLargeTestTSDataset
+                                               :AlgorithmSuitableForLargeTrainTSDataset
+                                               :AlgorithmSuitableForLongTSDataset
+                                               :AlgorithmSuitableForManyClassTSDataset
+                                               :AlgorithmSuitableForMediumClassTSDataset
+                                               :AlgorithmSuitableForMediumTSDataset
+                                               :AlgorithmSuitableForMediumTestTSDataset
+                                               :AlgorithmSuitableForMediumTrainTSDataset
+                                               :AlgorithmSuitableForMotionTSDataset
+                                               :AlgorithmSuitableForSensorTSDataset
+                                               :AlgorithmSuitableForShortTSDataset
+                                               :AlgorithmSuitableForSimulatedTSDataset
+                                               :AlgorithmSuitableForSmallTestTSDataset
+                                               :AlgorithmSuitableForSmallTrainTSDataset
+                                               :AlgorithmWithDerivative
+                                               :ConcreteTSCAlgorithm
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :employs ;
+                                                 owl:someValuesFrom <http://www.semanticweb.org/mantx/ontologies/TSC#1NearestNeighbor>
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :ConcreteTSCAlgorithm .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#ERP_1NN
+:ERP_1NN rdf:type owl:Class ;
+         owl:equivalentClass [ owl:intersectionOf ( :AlgorithmSuitableForECGTSDataset
+                                                    :ConcreteTSCAlgorithm
+                                                    [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty :employs ;
+                                                                             owl:someValuesFrom <http://www.semanticweb.org/mantx/ontologies/TSC#1NearestNeighbor>
+                                                                           ]
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty :hasMeasure ;
+                                                                             owl:someValuesFrom :EditDistanceforRealSequences
+                                                                           ]
+                                                                         ) ;
+                                                      rdf:type owl:Class
+                                                    ]
+                                                  ) ;
+                               rdf:type owl:Class
+                             ] ;
+         rdfs:subClassOf :ConcreteTSCAlgorithm .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#Eclatalgorithm
+:Eclatalgorithm rdf:type owl:Class ;
+                rdfs:subClassOf :AssociationRuleLearning .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#EditDistancebasedonRealPenalty
+:EditDistancebasedonRealPenalty rdf:type owl:Class ;
+                                rdfs:subClassOf :DistanceFunction .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#EditDistanceforRealSequences
+:EditDistanceforRealSequences rdf:type owl:Class ;
+                              rdfs:subClassOf :DistanceFunction .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#EditMetadata
+:EditMetadata rdf:type owl:Class ;
+              rdfs:subClassOf :Preprocessing .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#ElasticNet
+:ElasticNet rdf:type owl:Class ;
+            rdfs:subClassOf :Regression ,
+                            :Regularization .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#Ensemble
+:Ensemble rdf:type owl:Class ;
+          rdfs:subClassOf :AlgorithmByModel .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#EstimationMethod
+:EstimationMethod rdf:type owl:Class ;
+                  rdfs:subClassOf :AlgorithmByModel .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#EuclideanDistance
+:EuclideanDistance rdf:type owl:Class ;
+                   rdfs:subClassOf :MinkowskiDistance .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#Euclidean_1NN
+:Euclidean_1NN rdf:type owl:Class ;
+               owl:equivalentClass [ owl:intersectionOf ( :ConcreteTSCAlgorithm
+                                                          [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                   owl:onProperty :employs ;
+                                                                                   owl:someValuesFrom <http://www.semanticweb.org/mantx/ontologies/TSC#1NearestNeighbor>
+                                                                                 ]
+                                                                                 [ rdf:type owl:Restriction ;
+                                                                                   owl:onProperty :hasMeasure ;
+                                                                                   owl:someValuesFrom :EuclideanDistance
+                                                                                 ]
+                                                                               ) ;
+                                                            rdf:type owl:Class
+                                                          ]
+                                                        ) ;
+                                     rdf:type owl:Class
+                                   ] ;
+               rdfs:subClassOf :ConcreteTSCAlgorithm .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#ExpectationMaximisation
+:ExpectationMaximisation rdf:type owl:Class ;
+                         rdfs:subClassOf :Clustering .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#FS
+:FS rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :AlgorithmBasedOnShapelets
+                                               :ConcreteTSCAlgorithm
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :ConcreteTSCAlgorithm .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#FastDTW
+:FastDTW rdf:type owl:Class ;
+         rdfs:subClassOf :DistanceFunction .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#FeatureSelection
+:FeatureSelection rdf:type owl:Class ;
+                  rdfs:subClassOf :Preprocessing .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#FeatureSelectionalgorithms
+:FeatureSelectionalgorithms rdf:type owl:Class ;
+                            rdfs:subClassOf :AlgorithmByModel .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#FewClassTSDataset
+:FewClassTSDataset rdf:type owl:Class ;
+                   owl:equivalentClass [ rdf:type owl:Restriction ;
+                                         owl:onProperty :hasClassSize ;
+                                         owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                              owl:onDatatype xsd:integer ;
+                                                              owl:withRestrictions ( [ xsd:maxExclusive 10
+                                                                                     ]
+                                                                                   )
+                                                            ]
+                                       ] ;
+                   rdfs:subClassOf :TSDatasetByNoOfClass .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#Filter
+:Filter rdf:type owl:Class ;
+        rdfs:subClassOf :Preprocessing .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#FlexibleDiscriminantAnalysis
+:FlexibleDiscriminantAnalysis rdf:type owl:Class ;
+                              rdfs:subClassOf :DimensionalityReduction .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#FullWarpingWindow
+:FullWarpingWindow rdf:type owl:Class ;
+                   rdfs:subClassOf :WarpingWindow ;
+                   owl:disjointWith :WarpingWindowSetThroughCrossValidation .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#GaussianNaiveBayes
+:GaussianNaiveBayes rdf:type owl:Class ;
+                    rdfs:subClassOf :Bayesian .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#GeneralBayesianNetwork
+:GeneralBayesianNetwork rdf:type owl:Class ;
+                        rdfs:subClassOf :Bayesian .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#GeneticAlgorithm
+:GeneticAlgorithm rdf:type owl:Class ;
+                  rdfs:subClassOf :AlgorithmByModel .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#GradientBoostedRegressionTrees
+:GradientBoostedRegressionTrees rdf:type owl:Class ;
+                                rdfs:subClassOf :Ensemble .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#GradientBoostingMachines
+:GradientBoostingMachines rdf:type owl:Class ;
+                          rdfs:subClassOf :Ensemble .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#HierarchicalClustering
+:HierarchicalClustering rdf:type owl:Class ;
+                        rdfs:subClassOf :Clustering .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#HopfieldNetwork
+:HopfieldNetwork rdf:type owl:Class ;
+                 rdfs:subClassOf :Artificial_Neural_Network .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#ImageTSDataset
+:ImageTSDataset rdf:type owl:Class ;
+                rdfs:subClassOf :TSDatasetByArea .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#Instance-based
+:Instance-based rdf:type owl:Class ;
+                rdfs:subClassOf :AlgorithmByModel .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#IterativeDichotomiser3
+:IterativeDichotomiser3 rdf:type owl:Class ;
+                        rdfs:subClassOf :Decisiontrees .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#Kernel-Based
+:Kernel-Based rdf:type owl:Class ;
+              rdfs:subClassOf :AlgorithmByModel .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#LCSS_1NN
+:LCSS_1NN rdf:type owl:Class ;
+          owl:equivalentClass [ owl:intersectionOf ( :AlgorithmSuitableForECGTSDataset
+                                                     :AlgorithmSuitableForMediumClassTSDataset
+                                                     :AlgorithmSuitableForMotionTSDataset
+                                                     :AlgorithmSuitableForSimulatedTSDataset
+                                                     :ConcreteTSCAlgorithm
+                                                     [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                              owl:onProperty :employs ;
+                                                                              owl:someValuesFrom <http://www.semanticweb.org/mantx/ontologies/TSC#1NearestNeighbor>
+                                                                            ]
+                                                                            [ rdf:type owl:Restriction ;
+                                                                              owl:onProperty :hasMeasure ;
+                                                                              owl:someValuesFrom :LongestCommonSubsequenceDistanceforRealSequences
+                                                                            ]
+                                                                          ) ;
+                                                       rdf:type owl:Class
+                                                     ]
+                                                   ) ;
+                                rdf:type owl:Class
+                              ] ;
+          rdfs:subClassOf :ConcreteTSCAlgorithm .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#LPS
+:LPS rdf:type owl:Class ;
+     owl:equivalentClass [ owl:intersectionOf ( :AlgorithmBasedOnIntervals
+                                                :AlgorithmSuitableForDeviceTSDataset
+                                                :AlgorithmSuitableForFewClassTSDataset
+                                                :AlgorithmSuitableForImageTSDataset
+                                                :AlgorithmSuitableForLargeTestTSDataset
+                                                :AlgorithmSuitableForLargeTrainTSDataset
+                                                :AlgorithmSuitableForManyClassTSDataset
+                                                :AlgorithmSuitableForMediumTSDataset
+                                                :AlgorithmSuitableForMediumTestTSDataset
+                                                :AlgorithmSuitableForMotionTSDataset
+                                                :AlgorithmSuitableForSensorTSDataset
+                                                :AlgorithmSuitableForShortTSDataset
+                                                :AlgorithmSuitableForSimulatedTSDataset
+                                                :AlgorithmSuitableForSmallTestTSDataset
+                                                :AlgorithmSuitableForSmallTrainTSDataset
+                                                :AlgorithmWithACF
+                                                :AlgorithmWithDerivative
+                                                :ConcreteTSCAlgorithm
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :employs ;
+                                                  owl:someValuesFrom <http://www.semanticweb.org/mantx/ontologies/TSC#1NearestNeighbor>
+                                                ]
+                                              ) ;
+                           rdf:type owl:Class
+                         ] ;
+     rdfs:subClassOf :ConcreteTSCAlgorithm .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#LS
+:LS rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :AlgorithmBasedOnShapelets
+                                               :AlgorithmSuitableForFewClassTSDataset
+                                               :AlgorithmSuitableForImageTSDataset
+                                               :AlgorithmSuitableForMediumTSDataset
+                                               :AlgorithmSuitableForMotionTSDataset
+                                               :AlgorithmSuitableForSensorTSDataset
+                                               :AlgorithmSuitableForShortTSDataset
+                                               :AlgorithmSuitableForSimulatedTSDataset
+                                               :AlgorithmSuitableForSmallTestTSDataset
+                                               :AlgorithmSuitableForSmallTrainTSDataset
+                                               :ConcreteTSCAlgorithm
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :ConcreteTSCAlgorithm .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#LS-SVM
+:LS-SVM rdf:type owl:Class ;
+        rdfs:subClassOf :SupportVectorMachine .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#LargeTestTSDataset
+:LargeTestTSDataset rdf:type owl:Class ;
+                    owl:equivalentClass [ rdf:type owl:Restriction ;
+                                          owl:onProperty :hasTestSize ;
+                                          owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                               owl:onDatatype xsd:integer ;
+                                                               owl:withRestrictions ( [ xsd:minExclusive 1000
+                                                                                      ]
+                                                                                    )
+                                                             ]
+                                        ] ;
+                    rdfs:subClassOf :TSDatasetByTestSize .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#LargeTrainTSDataset
+:LargeTrainTSDataset rdf:type owl:Class ;
+                     owl:equivalentClass [ rdf:type owl:Restriction ;
+                                           owl:onProperty :hasTrainSize ;
+                                           owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                owl:onDatatype xsd:integer ;
+                                                                owl:withRestrictions ( [ xsd:minExclusive 500
+                                                                                       ]
+                                                                                     )
+                                                              ]
+                                         ] ;
+                     rdfs:subClassOf :TSDatasetByTrainSize .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#LearningVectorQuantization
+:LearningVectorQuantization rdf:type owl:Class ;
+                            rdfs:subClassOf :Artificial_Neural_Network ,
+                                            :Instance-based .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#LearningWithCounts
+:LearningWithCounts rdf:type owl:Class ;
+                    rdfs:subClassOf :Preprocessing .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#Least-AngleRegression
+:Least-AngleRegression rdf:type owl:Class ;
+                       rdfs:subClassOf :Regularization .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#LeastAbsoluteShrinkageAndSelectionOperator
+:LeastAbsoluteShrinkageAndSelectionOperator rdf:type owl:Class ;
+                                            rdfs:subClassOf :Regression ,
+                                                            :Regularization .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#LinearDiscriminantAnalysis
+:LinearDiscriminantAnalysis rdf:type owl:Class ;
+                            rdfs:subClassOf :DimensionalityReduction .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#LinearDiscriminateAnalysis
+:LinearDiscriminateAnalysis rdf:type owl:Class ;
+                            rdfs:subClassOf :Kernel-Based .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#LinearRegression
+:LinearRegression rdf:type owl:Class ;
+                  rdfs:subClassOf :Regression .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#LocallyEstimatedScatterplotSmoothing
+:LocallyEstimatedScatterplotSmoothing rdf:type owl:Class ;
+                                      rdfs:subClassOf :Regression .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#LocallyWeightedLearning
+:LocallyWeightedLearning rdf:type owl:Class ;
+                         rdfs:subClassOf :Instance-based .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#LocallyWeightedRegression
+:LocallyWeightedRegression rdf:type owl:Class ;
+                           rdfs:subClassOf :Regression .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#Logistic
+:Logistic rdf:type owl:Class ;
+          owl:equivalentClass [ owl:intersectionOf ( :AlgorithmSuitableForSpectroTSDataset
+                                                     :ConcreteTSCAlgorithm
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty :employs ;
+                                                       owl:someValuesFrom :LogisticRegression
+                                                     ]
+                                                   ) ;
+                                rdf:type owl:Class
+                              ] ;
+          rdfs:subClassOf :ConcreteTSCAlgorithm .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#LogisticRegression
+:LogisticRegression rdf:type owl:Class ;
+                    rdfs:subClassOf :Regression .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#LongTSDataset
+:LongTSDataset rdf:type owl:Class ;
+               owl:equivalentClass [ rdf:type owl:Restriction ;
+                                     owl:onProperty :hasLengthSize ;
+                                     owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                          owl:onDatatype xsd:integer ;
+                                                          owl:withRestrictions ( [ xsd:minExclusive 700
+                                                                                 ]
+                                                                               )
+                                                        ]
+                                   ] ;
+               rdfs:subClassOf :TSDatasetByLength .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#LongestCommonSubsequenceDistanceforRealSequences
+:LongestCommonSubsequenceDistanceforRealSequences rdf:type owl:Class ;
+                                                  rdfs:subClassOf :DistanceFunction .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#M5
+:M5 rdf:type owl:Class ;
+    rdfs:subClassOf :Decisiontrees .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#MLP
+:MLP rdf:type owl:Class ;
+     owl:equivalentClass [ owl:intersectionOf ( :AlgorithmSuitableForSpectroTSDataset
+                                                :ConcreteTSCAlgorithm
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :employs ;
+                                                  owl:someValuesFrom :Perceptron
+                                                ]
+                                              ) ;
+                           rdf:type owl:Class
+                         ] ;
+     rdfs:subClassOf :ConcreteTSCAlgorithm .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#MSM_1NN
+:MSM_1NN rdf:type owl:Class ;
+         owl:equivalentClass [ owl:intersectionOf ( :AlgorithmBasedOnWholeSeries
+                                                    :AlgorithmSuitableForDeviceTSDataset
+                                                    :AlgorithmSuitableForECGTSDataset
+                                                    :AlgorithmSuitableForFewClassTSDataset
+                                                    :AlgorithmSuitableForImageTSDataset
+                                                    :AlgorithmSuitableForLargeTestTSDataset
+                                                    :AlgorithmSuitableForLongTSDataset
+                                                    :AlgorithmSuitableForManyClassTSDataset
+                                                    :AlgorithmSuitableForMediumClassTSDataset
+                                                    :AlgorithmSuitableForMediumTSDataset
+                                                    :AlgorithmSuitableForMediumTestTSDataset
+                                                    :AlgorithmSuitableForMediumTrainTSDataset
+                                                    :AlgorithmSuitableForMotionTSDataset
+                                                    :AlgorithmSuitableForSimulatedTSDataset
+                                                    :AlgorithmSuitableForSmallTrainTSDataset
+                                                    :ConcreteTSCAlgorithm
+                                                    [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty :employs ;
+                                                                             owl:someValuesFrom <http://www.semanticweb.org/mantx/ontologies/TSC#1NearestNeighbor>
+                                                                           ]
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty :hasMeasure ;
+                                                                             owl:someValuesFrom :Move-Split-Merge
+                                                                           ]
+                                                                         ) ;
+                                                      rdf:type owl:Class
+                                                    ]
+                                                  ) ;
+                               rdf:type owl:Class
+                             ] ;
+         rdfs:subClassOf :ConcreteTSCAlgorithm .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#ManhattanDistance
+:ManhattanDistance rdf:type owl:Class ;
+                   rdfs:subClassOf :MinkowskiDistance .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#ManyClassTSDataset
+:ManyClassTSDataset rdf:type owl:Class ;
+                    owl:equivalentClass [ rdf:type owl:Restriction ;
+                                          owl:onProperty :hasClassSize ;
+                                          owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                               owl:onDatatype xsd:integer ;
+                                                               owl:withRestrictions ( [ xsd:minExclusive 30
+                                                                                      ]
+                                                                                    )
+                                                             ]
+                                        ] ;
+                    rdfs:subClassOf :TSDatasetByNoOfClass .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#Mathematics
+:Mathematics rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#MediumClassTSDataset
+:MediumClassTSDataset rdf:type owl:Class ;
+                      owl:equivalentClass [ rdf:type owl:Restriction ;
+                                            owl:onProperty :hasClassSize ;
+                                            owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                 owl:onDatatype xsd:integer ;
+                                                                 owl:withRestrictions ( [ xsd:minInclusive 10
+                                                                                        ]
+                                                                                        [ xsd:maxInclusive 30
+                                                                                        ]
+                                                                                      )
+                                                               ]
+                                          ] ;
+                      rdfs:subClassOf :TSDatasetByNoOfClass .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#MediumTSDataset
+:MediumTSDataset rdf:type owl:Class ;
+                 owl:equivalentClass [ rdf:type owl:Restriction ;
+                                       owl:onProperty :hasLengthSize ;
+                                       owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                            owl:onDatatype xsd:integer ;
+                                                            owl:withRestrictions ( [ xsd:minInclusive 300
+                                                                                   ]
+                                                                                   [ xsd:maxInclusive 700
+                                                                                   ]
+                                                                                 )
+                                                          ]
+                                     ] ;
+                 rdfs:subClassOf :TSDatasetByLength .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#MediumTestTSDataset
+:MediumTestTSDataset rdf:type owl:Class ;
+                     owl:equivalentClass [ rdf:type owl:Restriction ;
+                                           owl:onProperty :hasTestSize ;
+                                           owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                owl:onDatatype xsd:integer ;
+                                                                owl:withRestrictions ( [ xsd:minInclusive 300
+                                                                                       ]
+                                                                                       [ xsd:maxInclusive 1000
+                                                                                       ]
+                                                                                     )
+                                                              ]
+                                         ] ;
+                     rdfs:subClassOf :TSDatasetByTestSize .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#MediumTrainTSDataset
+:MediumTrainTSDataset rdf:type owl:Class ;
+                      owl:equivalentClass [ rdf:type owl:Restriction ;
+                                            owl:onProperty :hasTrainSize ;
+                                            owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                 owl:onDatatype xsd:integer ;
+                                                                 owl:withRestrictions ( [ xsd:minInclusive 100
+                                                                                        ]
+                                                                                        [ xsd:maxInclusive 500
+                                                                                        ]
+                                                                                      )
+                                                               ]
+                                          ] ;
+                      rdfs:subClassOf :TSDatasetByTrainSize .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#MinkowskiDistance
+:MinkowskiDistance rdf:type owl:Class ;
+                   rdfs:subClassOf :DistanceFunction .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#MixtureDiscriminantAnalysis
+:MixtureDiscriminantAnalysis rdf:type owl:Class ;
+                             rdfs:subClassOf :DimensionalityReduction .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#MotionTSDataset
+:MotionTSDataset rdf:type owl:Class ;
+                 rdfs:subClassOf :TSDatasetByArea .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#Move-Split-Merge
+:Move-Split-Merge rdf:type owl:Class ;
+                  rdfs:subClassOf :DistanceFunction .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#MulticlassSVM
+:MulticlassSVM rdf:type owl:Class ;
+               rdfs:subClassOf :SupportVectorMachine .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#MultidimensionalScaling
+:MultidimensionalScaling rdf:type owl:Class ;
+                         rdfs:subClassOf :DimensionalityReduction .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#MultinomialNaiveBayes
+:MultinomialNaiveBayes rdf:type owl:Class ;
+                       rdfs:subClassOf :Bayesian .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#MultivariateAdaptiveRegressionSplines
+:MultivariateAdaptiveRegressionSplines rdf:type owl:Class ;
+                                       rdfs:subClassOf :Regression .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#NB
+:NB rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :ConcreteTSCAlgorithm
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :employs ;
+                                                 owl:someValuesFrom :NaiveBayes
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :ConcreteTSCAlgorithm .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#NaiveBayes
+:NaiveBayes rdf:type owl:Class ;
+            rdfs:subClassOf :Bayesian .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#NormalizeData
+:NormalizeData rdf:type owl:Class ;
+               rdfs:subClassOf :Preprocessing .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#OrdinaryLeastSquaresRegression
+:OrdinaryLeastSquaresRegression rdf:type owl:Class ;
+                                rdfs:subClassOf :Regression .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#PS
+:PS rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :AlgorithmSuitableForECGTSDataset
+                                               :ConcreteTSCAlgorithm
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :ConcreteTSCAlgorithm .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#PUBLIC
+:PUBLIC rdf:type owl:Class ;
+        rdfs:subClassOf :Decisiontrees .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#PartialLeastSquaresRegression
+:PartialLeastSquaresRegression rdf:type owl:Class ;
+                               rdfs:subClassOf :DimensionalityReduction .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#PartitionAndSample
+:PartitionAndSample rdf:type owl:Class ;
+                    rdfs:subClassOf :Preprocessing .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#Perceptron
+:Perceptron rdf:type owl:Class ;
+            rdfs:subClassOf :Artificial_Neural_Network .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#PolynomialRegression
+:PolynomialRegression rdf:type owl:Class ;
+                      rdfs:subClassOf :Regression .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#Preprocessing
+:Preprocessing rdf:type owl:Class ;
+               rdfs:subClassOf :AlgorithmByModel .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#PrincipalComponentAnalysis
+:PrincipalComponentAnalysis rdf:type owl:Class ;
+                            rdfs:subClassOf :DimensionalityReduction .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#PrincipalComponentRegression
+:PrincipalComponentRegression rdf:type owl:Class ;
+                              rdfs:subClassOf :DimensionalityReduction .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#ProjectionPursuit
+:ProjectionPursuit rdf:type owl:Class ;
+                   rdfs:subClassOf :DimensionalityReduction .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#Q-Learning
+:Q-Learning rdf:type owl:Class ;
+            rdfs:subClassOf :ReinforcementLearning ;
+            owl:disjointWith :TemporalDifferencelearning .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#QuadraticDiscriminantAnalysis
+:QuadraticDiscriminantAnalysis rdf:type owl:Class ;
+                               rdfs:subClassOf :DimensionalityReduction .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#QuantizeData
+:QuantizeData rdf:type owl:Class ;
+              rdfs:subClassOf :Preprocessing .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#RadialBasisFunction
+:RadialBasisFunction rdf:type owl:Class ;
+                     rdfs:subClassOf :Kernel-Based .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#RadialBasisFunctionNetwork
+:RadialBasisFunctionNetwork rdf:type owl:Class ;
+                            rdfs:subClassOf :Artificial_Neural_Network .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#RandF
+:RandF rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :AlgorithmSuitableForLargeTrainTSDataset
+                                                  :AlgorithmSuitableForSpectroTSDataset
+                                                  :ConcreteTSCAlgorithm
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :employs ;
+                                                    owl:someValuesFrom :RandomForest
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
+       rdfs:subClassOf :ConcreteTSCAlgorithm .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#RandomForest
+:RandomForest rdf:type owl:Class ;
+              rdfs:subClassOf :Ensemble .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#Regression
+:Regression rdf:type owl:Class ;
+            rdfs:subClassOf :AlgorithmByModel .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#Regularization
+:Regularization rdf:type owl:Class ;
+                rdfs:subClassOf :AlgorithmByModel .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#ReinforcementLearning
+:ReinforcementLearning rdf:type owl:Class ;
+                       rdfs:subClassOf :AlgorithmByModel .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#RidgeRegression
+:RidgeRegression rdf:type owl:Class ;
+                 rdfs:subClassOf :Regression ,
+                                 :Regularization .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#RotF
+:RotF rdf:type owl:Class ;
+      owl:equivalentClass [ owl:intersectionOf ( :AlgorithmSuitableForLargeTestTSDataset
+                                                 :AlgorithmSuitableForLargeTrainTSDataset
+                                                 :AlgorithmSuitableForSensorTSDataset
+                                                 :AlgorithmSuitableForShortTSDataset
+                                                 :AlgorithmSuitableForSpectroTSDataset
+                                                 :ConcreteTSCAlgorithm
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty :employs ;
+                                                   owl:someValuesFrom :RotationForest
+                                                 ]
+                                               ) ;
+                            rdf:type owl:Class
+                          ] ;
+      rdfs:subClassOf :ConcreteTSCAlgorithm .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#RotationForest
+:RotationForest rdf:type owl:Class ;
+                rdfs:subClassOf :Ensemble .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#Rule-Learner
+:Rule-Learner rdf:type owl:Class ;
+              rdfs:subClassOf :AlgorithmByModel .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#SAXVSM
+:SAXVSM rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :AlgorithmBasedOnDictionary
+                                                   :AlgorithmSuitableForSmallTestTSDataset
+                                                   :ConcreteTSCAlgorithm
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty :employs ;
+                                                     owl:someValuesFrom <http://www.semanticweb.org/mantx/ontologies/TSC#1NearestNeighbor>
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
+        rdfs:subClassOf :ConcreteTSCAlgorithm .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#SQLiteTransformation
+:SQLiteTransformation rdf:type owl:Class ;
+                      rdfs:subClassOf :Preprocessing .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#ST
+:ST rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :AlgorithmBasedOnCombinations
+                                               :AlgorithmBasedOnShapelets
+                                               :AlgorithmSuitableForDeviceTSDataset
+                                               :AlgorithmSuitableForECGTSDataset
+                                               :AlgorithmSuitableForFewClassTSDataset
+                                               :AlgorithmSuitableForImageTSDataset
+                                               :AlgorithmSuitableForLargeTestTSDataset
+                                               :AlgorithmSuitableForLargeTrainTSDataset
+                                               :AlgorithmSuitableForLongTSDataset
+                                               :AlgorithmSuitableForManyClassTSDataset
+                                               :AlgorithmSuitableForMediumClassTSDataset
+                                               :AlgorithmSuitableForMediumTSDataset
+                                               :AlgorithmSuitableForMediumTestTSDataset
+                                               :AlgorithmSuitableForMediumTrainTSDataset
+                                               :AlgorithmSuitableForMotionTSDataset
+                                               :AlgorithmSuitableForSensorTSDataset
+                                               :AlgorithmSuitableForShortTSDataset
+                                               :AlgorithmSuitableForSimulatedTSDataset
+                                               :AlgorithmSuitableForSmallTestTSDataset
+                                               :AlgorithmSuitableForSmallTrainTSDataset
+                                               :AlgorithmSuitableForSpectroTSDataset
+                                               :ConcreteTSCAlgorithm
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :ConcreteTSCAlgorithm .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#SVC
+:SVC rdf:type owl:Class ;
+     rdfs:subClassOf :SupportVectorMachine .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#SVML
+:SVML rdf:type owl:Class ;
+      owl:equivalentClass [ owl:intersectionOf ( :AlgorithmSuitableForSpectroTSDataset
+                                                 :ConcreteTSCAlgorithm
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty :employs ;
+                                                   owl:someValuesFrom :SupportVectorMachinesWithLinearKernel
+                                                 ]
+                                               ) ;
+                            rdf:type owl:Class
+                          ] ;
+      rdfs:subClassOf :ConcreteTSCAlgorithm .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#SVMQ
+:SVMQ rdf:type owl:Class ;
+      owl:equivalentClass [ owl:intersectionOf ( :AlgorithmSuitableForECGTSDataset
+                                                 :AlgorithmSuitableForSpectroTSDataset
+                                                 :ConcreteTSCAlgorithm
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty :employs ;
+                                                   owl:someValuesFrom :SupportVectorMachinesWithQuadraticKernel
+                                                 ]
+                                               ) ;
+                            rdf:type owl:Class
+                          ] ;
+      rdfs:subClassOf :ConcreteTSCAlgorithm .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#SVR
+:SVR rdf:type owl:Class ;
+     rdfs:subClassOf :SupportVectorMachine .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#SammonMapping
+:SammonMapping rdf:type owl:Class ;
+               rdfs:subClassOf :DimensionalityReduction .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#ScalablePaRallelizableInductionOfDecisionTrees
+:ScalablePaRallelizableInductionOfDecisionTrees rdf:type owl:Class ;
+                                                rdfs:subClassOf :Decisiontrees .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#Self-OrganizingMap
+:Self-OrganizingMap rdf:type owl:Class ;
+                    rdfs:subClassOf :Artificial_Neural_Network ,
+                                    :Instance-based .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#SensorTSDataset
+:SensorTSDataset rdf:type owl:Class ;
+                 rdfs:subClassOf :TSDatasetByArea .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#ShortTSDataset
+:ShortTSDataset rdf:type owl:Class ;
+                owl:equivalentClass [ rdf:type owl:Restriction ;
+                                      owl:onProperty :hasLengthSize ;
+                                      owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                           owl:onDatatype xsd:integer ;
+                                                           owl:withRestrictions ( [ xsd:maxExclusive 300
+                                                                                  ]
+                                                                                )
+                                                         ]
+                                    ] ;
+                rdfs:subClassOf :TSDatasetByLength .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#SimulatedTSDataset
+:SimulatedTSDataset rdf:type owl:Class ;
+                    rdfs:subClassOf :TSDatasetByArea .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#SmallTestTSDataset
+:SmallTestTSDataset rdf:type owl:Class ;
+                    owl:equivalentClass [ rdf:type owl:Restriction ;
+                                          owl:onProperty :hasTestSize ;
+                                          owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                               owl:onDatatype xsd:integer ;
+                                                               owl:withRestrictions ( [ xsd:maxExclusive 300
+                                                                                      ]
+                                                                                    )
+                                                             ]
+                                        ] ;
+                    rdfs:subClassOf :TSDatasetByTestSize .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#SmallTrainTSDataset
+:SmallTrainTSDataset rdf:type owl:Class ;
+                     owl:equivalentClass [ rdf:type owl:Restriction ;
+                                           owl:onProperty :hasTrainSize ;
+                                           owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                owl:onDatatype xsd:integer ;
+                                                                owl:withRestrictions ( [ xsd:maxExclusive 100
+                                                                                       ]
+                                                                                     )
+                                                              ]
+                                         ] ;
+                     rdfs:subClassOf :TSDatasetByTrainSize .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#SolutionForTSC
+:SolutionForTSC rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#SpectroTSDataset
+:SpectroTSDataset rdf:type owl:Class ;
+                  rdfs:subClassOf :TSDatasetByArea .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#StackedAuto-Encoders
+:StackedAuto-Encoders rdf:type owl:Class ;
+                      rdfs:subClassOf :DeepLearning .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#StackedGeneralization
+:StackedGeneralization rdf:type owl:Class ;
+                       rdfs:subClassOf :Ensemble .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#StepwiseRegression
+:StepwiseRegression rdf:type owl:Class ;
+                    rdfs:subClassOf :Regression .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#StructuredSVM
+:StructuredSVM rdf:type owl:Class ;
+               rdfs:subClassOf :SupportVectorMachine .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#SupervisedLearningInQuest
+:SupervisedLearningInQuest rdf:type owl:Class ;
+                           rdfs:subClassOf :Decisiontrees .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#SupportVectorMachine
+:SupportVectorMachine rdf:type owl:Class ;
+                      rdfs:subClassOf :Kernel-Based .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#SupportVectorMachinesWithLinearKernel
+:SupportVectorMachinesWithLinearKernel rdf:type owl:Class ;
+                                       rdfs:subClassOf :SupportVectorMachine .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#SupportVectorMachinesWithQuadraticKernel
+:SupportVectorMachinesWithQuadraticKernel rdf:type owl:Class ;
+                                          rdfs:subClassOf :SupportVectorMachine .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#SyntheticMinorityOversamplingTechnique
+:SyntheticMinorityOversamplingTechnique rdf:type owl:Class ;
+                                        rdfs:subClassOf :Preprocessing .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#TSBF
+:TSBF rdf:type owl:Class ;
+      owl:equivalentClass [ owl:intersectionOf ( :AlgorithmBasedOnCombinations
+                                                 :AlgorithmBasedOnIntervals
+                                                 :AlgorithmSuitableForFewClassTSDataset
+                                                 :AlgorithmSuitableForImageTSDataset
+                                                 :AlgorithmSuitableForLargeTestTSDataset
+                                                 :AlgorithmSuitableForLargeTrainTSDataset
+                                                 :AlgorithmSuitableForManyClassTSDataset
+                                                 :AlgorithmSuitableForMediumTSDataset
+                                                 :AlgorithmSuitableForMediumTrainTSDataset
+                                                 :AlgorithmSuitableForMotionTSDataset
+                                                 :AlgorithmSuitableForSensorTSDataset
+                                                 :AlgorithmSuitableForShortTSDataset
+                                                 :AlgorithmSuitableForSimulatedTSDataset
+                                                 :AlgorithmSuitableForSmallTestTSDataset
+                                                 :AlgorithmSuitableForSmallTrainTSDataset
+                                                 :ConcreteTSCAlgorithm
+                                               ) ;
+                            rdf:type owl:Class
+                          ] ;
+      rdfs:subClassOf :ConcreteTSCAlgorithm .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#TSDatasetByArea
+:TSDatasetByArea rdf:type owl:Class ;
+                 rdfs:subClassOf :TimeSeriesDataset .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#TSDatasetByLength
+:TSDatasetByLength rdf:type owl:Class ;
+                   owl:equivalentClass [ rdf:type owl:Restriction ;
+                                         owl:onProperty :hasAttribute ;
+                                         owl:hasValue "true"^^xsd:boolean
+                                       ] ;
+                   rdfs:subClassOf :TimeSeriesDataset .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#TSDatasetByNoOfClass
+:TSDatasetByNoOfClass rdf:type owl:Class ;
+                      owl:equivalentClass [ rdf:type owl:Restriction ;
+                                            owl:onProperty :hasClass ;
+                                            owl:hasValue "true"^^xsd:boolean
+                                          ] ;
+                      rdfs:subClassOf :TimeSeriesDataset .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#TSDatasetByTestSize
+:TSDatasetByTestSize rdf:type owl:Class ;
+                     owl:equivalentClass [ rdf:type owl:Restriction ;
+                                           owl:onProperty :hasTest ;
+                                           owl:hasValue "true"^^xsd:boolean
+                                         ] ;
+                     rdfs:subClassOf :TimeSeriesDataset .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#TSDatasetByTrainSize
+:TSDatasetByTrainSize rdf:type owl:Class ;
+                      owl:equivalentClass [ rdf:type owl:Restriction ;
+                                            owl:onProperty :hasTrain ;
+                                            owl:hasValue "true"^^xsd:boolean
+                                          ] ;
+                      rdfs:subClassOf :TimeSeriesDataset .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#TSF
+:TSF rdf:type owl:Class ;
+     owl:equivalentClass [ owl:intersectionOf ( :AlgorithmBasedOnCombinations
+                                                :AlgorithmBasedOnIntervals
+                                                :AlgorithmSuitableForDeviceTSDataset
+                                                :AlgorithmSuitableForECGTSDataset
+                                                :AlgorithmSuitableForFewClassTSDataset
+                                                :AlgorithmSuitableForImageTSDataset
+                                                :AlgorithmSuitableForLargeTestTSDataset
+                                                :AlgorithmSuitableForLargeTrainTSDataset
+                                                :AlgorithmSuitableForLongTSDataset
+                                                :AlgorithmSuitableForManyClassTSDataset
+                                                :AlgorithmSuitableForMediumTrainTSDataset
+                                                :AlgorithmSuitableForSensorTSDataset
+                                                :AlgorithmSuitableForShortTSDataset
+                                                :AlgorithmSuitableForSmallTestTSDataset
+                                                :AlgorithmSuitableForSpectroTSDataset
+                                                :ConcreteTSCAlgorithm
+                                              ) ;
+                           rdf:type owl:Class
+                         ] ;
+     rdfs:subClassOf :ConcreteTSCAlgorithm .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#TWE_1NN
+:TWE_1NN rdf:type owl:Class ;
+         owl:equivalentClass [ owl:intersectionOf ( :AlgorithmBasedOnWholeSeries
+                                                    :AlgorithmSuitableForManyClassTSDataset
+                                                    :AlgorithmSuitableForMediumClassTSDataset
+                                                    :ConcreteTSCAlgorithm
+                                                    [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty :employs ;
+                                                                             owl:someValuesFrom <http://www.semanticweb.org/mantx/ontologies/TSC#1NearestNeighbor>
+                                                                           ]
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty :hasMeasure ;
+                                                                             owl:someValuesFrom :TimeWarpEditDistance
+                                                                           ]
+                                                                         ) ;
+                                                      rdf:type owl:Class
+                                                    ]
+                                                  ) ;
+                               rdf:type owl:Class
+                             ] ;
+         rdfs:subClassOf :ConcreteTSCAlgorithm .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#TemporalDifferencelearning
+:TemporalDifferencelearning rdf:type owl:Class ;
+                            rdfs:subClassOf :ReinforcementLearning .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#TimeSeriesDataset
+:TimeSeriesDataset rdf:type owl:Class ;
+                   rdfs:subClassOf :Dataset .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#TimeWarpEditDistance
+:TimeWarpEditDistance rdf:type owl:Class ;
+                      rdfs:subClassOf :DistanceFunction .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#TransductiveSupportVectorMachines
+:TransductiveSupportVectorMachines rdf:type owl:Class ;
+                                   rdfs:subClassOf :SupportVectorMachine .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#TreeAugmentedNaïveBayes
+:TreeAugmentedNaïveBayes rdf:type owl:Class ;
+                         rdfs:subClassOf :Bayesian .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#WDDTW_1NN
+:WDDTW_1NN rdf:type owl:Class ;
+           owl:equivalentClass [ owl:intersectionOf ( :AlgorithmBasedOnWholeSeries
+                                                      :ConcreteTSCAlgorithm
+                                                      [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                               owl:onProperty :employs ;
+                                                                               owl:someValuesFrom <http://www.semanticweb.org/mantx/ontologies/TSC#1NearestNeighbor>
+                                                                             ]
+                                                                             [ rdf:type owl:Restriction ;
+                                                                               owl:onProperty :hasMeasure ;
+                                                                               owl:someValuesFrom :DerivativeDynamicTimeWarping
+                                                                             ]
+                                                                           ) ;
+                                                        rdf:type owl:Class
+                                                      ]
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty :hasFunction ;
+                                                        owl:someValuesFrom :WeightFunction
+                                                      ]
+                                                    ) ;
+                                 rdf:type owl:Class
+                               ] ;
+           rdfs:subClassOf :ConcreteTSCAlgorithm .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#WDTW_1NN
+:WDTW_1NN rdf:type owl:Class ;
+          owl:equivalentClass [ owl:intersectionOf ( :AlgorithmBasedOnWholeSeries
+                                                     :AlgorithmSuitableForMediumClassTSDataset
+                                                     :ConcreteTSCAlgorithm
+                                                     [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                              owl:onProperty :employs ;
+                                                                              owl:someValuesFrom <http://www.semanticweb.org/mantx/ontologies/TSC#1NearestNeighbor>
+                                                                            ]
+                                                                            [ rdf:type owl:Restriction ;
+                                                                              owl:onProperty :hasMeasure ;
+                                                                              owl:someValuesFrom :DynamicTimeWarping
+                                                                            ]
+                                                                          ) ;
+                                                       rdf:type owl:Class
+                                                     ]
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty :hasFunction ;
+                                                       owl:someValuesFrom :WeightFunction
+                                                     ]
+                                                   ) ;
+                                rdf:type owl:Class
+                              ] ;
+          rdfs:subClassOf :ConcreteTSCAlgorithm .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#WarpingWindow
+:WarpingWindow rdf:type owl:Class ;
+               rdfs:subClassOf :Mathematics .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#WarpingWindowSetThroughCrossValidation
+:WarpingWindowSetThroughCrossValidation rdf:type owl:Class ;
+                                        rdfs:subClassOf :WarpingWindow .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#WeightFunction
+:WeightFunction rdf:type owl:Class ;
+                rdfs:subClassOf :Mathematics .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#WeightedDynamicTimeWarping
+:WeightedDynamicTimeWarping rdf:type owl:Class ;
+                            rdfs:subClassOf :DistanceFunction .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#k-Means
+:k-Means rdf:type owl:Class ;
+         rdfs:subClassOf :Clustering .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#k-Medians
+:k-Medians rdf:type owl:Class ;
+           rdfs:subClassOf :Clustering .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#k-NearestNeighbor
+:k-NearestNeighbor rdf:type owl:Class ;
+                   rdfs:subClassOf :Instance-based .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#1NearestNeighbor
+<http://www.semanticweb.org/mantx/ontologies/TSC#1NearestNeighbor> rdf:type owl:Class ;
+                                                                   rdfs:subClassOf :k-NearestNeighbor .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#FewClassSample
+:FewClassSample rdf:type owl:NamedIndividual ,
+                         :TimeSeriesDataset ;
+                :hasClassSize 5 .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#ManyClassSample
+:ManyClassSample rdf:type owl:NamedIndividual ,
+                          :TimeSeriesDataset ;
+                 :hasClassSize 50 .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#MediumClassSample
+:MediumClassSample rdf:type owl:NamedIndividual ,
+                            :TimeSeriesDataset ;
+                   :hasClassSize 15 .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#Sample_MClass_LLength_STrain
+:Sample_MClass_LLength_STrain rdf:type owl:NamedIndividual ,
+                                       :TimeSeriesDataset ;
+                              :hasClassSize 20 ;
+                              :hasLengthSize 1000 ;
+                              :hasTrainSize 80 .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#SolutionForSample_MClass_LLength_STrain
+:SolutionForSample_MClass_LLength_STrain rdf:type owl:NamedIndividual ,
+                                                  :ConcreteTSCAlgorithm ;
+                                         :suitableFor :Sample_MClass_LLength_STrain .
+
+
+###  http://www.semanticweb.org/mantx/ontologies/TSC#SolutionSuitableForFewClassSample
+:SolutionSuitableForFewClassSample rdf:type owl:NamedIndividual ,
+                                            :ConcreteTSCAlgorithm ;
+                                   :suitableFor :FewClassSample .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :ASSISTANT
+                :C4.5
+                :C5.0
+                :Chi-squaredAutomaticInteractionDetection
+                :ClassificationAndRegressionTree
+                :ConditionalDecisionTrees
+                :DecisionStump
+                :IterativeDichotomiser3
+                :M5
+                :PUBLIC
+                :ScalablePaRallelizableInductionOfDecisionTrees
+                :SupervisedLearningInQuest
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :AdaBoost
+                :Boosting
+                :BootstrappedAggregation
+                :GradientBoostedRegressionTrees
+                :GradientBoostingMachines
+                :RandomForest
+                :StackedGeneralization
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :AveragedOne-DependenceEstimators
+                :BN_AugmentedNaiveBayes
+                :BayesianBeliefNetwork
+                :BayesianNetwork
+                :GaussianNaiveBayes
+                :GeneralBayesianNetwork
+                :MultinomialNaiveBayes
+                :NaiveBayes
+                :TreeAugmentedNaïveBayes
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Back-Propagation
+                :HopfieldNetwork
+                :LearningVectorQuantization
+                :Perceptron
+                :RadialBasisFunctionNetwork
+                :Self-OrganizingMap
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :BayesianSVM
+                :LS-SVM
+                :MulticlassSVM
+                :SVC
+                :SVR
+                :StructuredSVM
+                :SupportVectorMachinesWithLinearKernel
+                :SupportVectorMachinesWithQuadraticKernel
+                :TransductiveSupportVectorMachines
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :BayesianSVM
+                :LS-SVM
+                :MulticlassSVM
+                :SVC
+                :SVR
+                :StructuredSVM
+                :TransductiveSupportVectorMachines
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :ChebyshevDistance
+                :EuclideanDistance
+                :ManhattanDistance
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :CleanMissingData
+                :ClipOutliers
+                :DimensionalityReduction
+                :EditMetadata
+                :FeatureSelection
+                :Filter
+                :LearningWithCounts
+                :NormalizeData
+                :PartitionAndSample
+                :QuantizeData
+                :SQLiteTransformation
+                :SyntheticMinorityOversamplingTechnique
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :ConvolutionalNeuralNetwork
+                :DeepBeliefNetworks
+                :DeepBoltzmannMachine
+                :StackedAuto-Encoders
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :CosineSimilarity
+                :DynamicTimeWarping
+                :EditDistanceforRealSequences
+                :LongestCommonSubsequenceDistanceforRealSequences
+                :MinkowskiDistance
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :DeviceTSDataset
+                :ECGTSDataset
+                :ImageTSDataset
+                :MotionTSDataset
+                :SensorTSDataset
+                :SimulatedTSDataset
+                :SpectroTSDataset
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :ElasticNet
+                :Least-AngleRegression
+                :LeastAbsoluteShrinkageAndSelectionOperator
+                :RidgeRegression
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :ElasticNet
+                :LeastAbsoluteShrinkageAndSelectionOperator
+                :LinearRegression
+                :LocallyEstimatedScatterplotSmoothing
+                :LocallyWeightedRegression
+                :LogisticRegression
+                :MultivariateAdaptiveRegressionSplines
+                :OrdinaryLeastSquaresRegression
+                :PolynomialRegression
+                :RidgeRegression
+                :StepwiseRegression
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :ExpectationMaximisation
+                :HierarchicalClustering
+                :k-Means
+                :k-Medians
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :FewClassTSDataset
+                :ManyClassTSDataset
+                :MediumClassTSDataset
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :FlexibleDiscriminantAnalysis
+                :LinearDiscriminantAnalysis
+                :MixtureDiscriminantAnalysis
+                :MultidimensionalScaling
+                :PartialLeastSquaresRegression
+                :PrincipalComponentAnalysis
+                :PrincipalComponentRegression
+                :ProjectionPursuit
+                :QuadraticDiscriminantAnalysis
+                :SammonMapping
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :LargeTestTSDataset
+                :MediumTestTSDataset
+                :SmallTestTSDataset
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :LargeTrainTSDataset
+                :MediumTrainTSDataset
+                :SmallTrainTSDataset
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :LearningVectorQuantization
+                :LocallyWeightedLearning
+                :Self-OrganizingMap
+                :k-NearestNeighbor
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :LinearDiscriminateAnalysis
+                :RadialBasisFunction
+                :SupportVectorMachine
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :LongTSDataset
+                :MediumTSDataset
+                :ShortTSDataset
+              )
+] .
+
+
+###  Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/
